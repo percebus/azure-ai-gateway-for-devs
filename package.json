@@ -1,0 +1,35 @@
+{
+  "name": "azure-ai-gateway-for-devs",
+  "version": "0.1.0",
+  "description": "Azure AI GateWay for Developers",
+  "keywords": [
+    "azure",
+    "AI",
+    "GateWay",
+    "APIM",
+    "foundry",
+    "IaC",
+    "infrastructure"
+  ],
+  "homepage": "https://github.com/percebus/azure-ai-gateway-for-devs#readme",
+  "bugs": {
+    "url": "https://github.com/percebus/azure-ai-gateway-for-devs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/percebus/azure-ai-gateway-for-devs.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "MicroSoft > Industry Solitions Engineering",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.2"
+  }
+}
