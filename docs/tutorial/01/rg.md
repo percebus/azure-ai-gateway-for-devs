@@ -6,8 +6,8 @@ A Stack Identifier is something that allows us to deploy the same Infrastructure
 
 For this tutorial, just use your username (i.e. `jcguerrero`)
 
-> ! WARN
-> ! Normally, we would add `region` to `rg`. But in this case: the RG will contain resources accross multiple regions.
+> [!WARN]
+> Normally, we would add `region` to `rg`. But in this case: the RG will contain resources accross multiple regions.
 
 ## Region(s)
 
