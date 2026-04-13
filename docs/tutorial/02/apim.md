@@ -1,4 +1,4 @@
-# Create Azure API [M]anagement
+# Azure API [M]anagement
 
 ![APIM](../../../assets/img/resources/apim.png)
 
@@ -10,30 +10,32 @@ Bear in mind that APIM can span accross multiple regions for high availability a
 > We'll work w/ v2 tiers. You CANNOT change from v1 (Like "Developer" or "Basic") to v2.
 
 > [!WARNING]
-> Creation takes like 30 minutes
+> Creation can take up to 30 minutes
 
-## Basics
+## Create
 
-### Instance details
+### Basics
+
+#### Instance details
 
 - Resource name: `ai-gw-{stack-id}-eastus-apim`
 - Organization name: Something like `Bananas`
 - Administrator email: Your email.- You will get msgs from APIM w/e a new user gets registered
 
-### Pricing tier
+#### Pricing tier
 
 - Pricing tier: `Basic v2`.
 
 > [!WARNING]
-> APIM Can be EXPENSIVE. Even the Basic v2 tier can incur into $200/mo
+> APIM Can be EXPENSIVE. Even the Basic v2 tier can incur into $500/mo
 
 - Unit(s): 1
 
 ![Basics](../../../assets/img/tutorial/eastus/apim/Basics.png)
 
-## Monitor + secure
+### Monitor + secure
 
-### Recommended add-ins
+#### Recommended add-ins
 
 - [x] Log Analytics (Enhanced monitoring and insights into your APIs)
   - Log analytics workspace: `ai-gw-{stack-id}-eastus-law`
@@ -43,7 +45,7 @@ Bear in mind that APIM can span accross multiple regions for high availability a
 
 ![Monitor and Secure](../../../assets/img/tutorial/eastus/apim/Monitor.png)
 
-## Networking
+### Networking
 
 Leave as-is
 
@@ -52,9 +54,9 @@ Leave as-is
 
 ![Networking](../../../assets/img/tutorial/eastus/apim/Networking.png)
 
-## Managed identity
+### Managed identity
 
-### System assigned managed identiy
+#### System assigned managed identiy
 
 - [x] Status: Enabled
 
@@ -63,10 +65,23 @@ Leave as-is
 
 ![Managed Identity](../../../assets/img/tutorial/eastus/apim/Managed_identity.png)
 
-## Review + create
+### Review + create
 
 ![Review + create](../../../assets/img/tutorial/eastus/apim/Review.png)
 
 ### Snapshot
 
 ![Snapshot w/ APIM](../../../assets/img/architecture/05_apim_rg.png)
+
+#### Resource visualizer
+
+![Visualizer](../../../assets/img/architecture/05_apim_visualizer.png)
+
+## APIs
+
+Familiarize yourself w/ APIM by exploring the APIs section, where you can create, manage, and test your APIs.
+
+- Backends: APIM-to-service connection (Optional)
+- APIs: Client-to-APIM connection
+  - Uses `backend`
+- Named values: Store values and/or secrets that can be used across your APIs
