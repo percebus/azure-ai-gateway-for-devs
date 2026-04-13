@@ -24,6 +24,8 @@ Use `foundry-ptu-openai` for all 3
 - Name:
 - Base path:
 
+For **Options**, Leave "Azure OpenAI" selected.
+
 ![Configure Model Route](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Configure_Model_Route.png)
 
 > [!NOTE]
@@ -48,6 +50,12 @@ Semantic caching is outside the scope of this tutorial. However, you can experim
 
 > [!WARNING]
 > OpenAI sometimes would reply w/ status 200, and message "Something went wrong". This gets cached
+
+#### Setup AI content safety
+
+APIM allows to connect directly to a Content Safety instance.
+
+However, since foundry includes Content Safety as part of its built-in APIs, we'll do that instead in a later step.
 
 #### Review + create
 
@@ -89,8 +97,9 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 
 1. Go to APIs > Backends. and find the backend with the ID `foundry-ptu-openai-ai-endpoint`. This is the backend service that the APIM policy is routing requests to.
 1. Go to Authorization credentials > Managed Identity. Look at the following fields:
-  - Client identity: System managed identity
-  - Resource ID: `https://cognitiveservices.azure.com/`
+
+- Client identity: System managed identity
+- Resource ID: `https://cognitiveservices.azure.com/`
 
 ![cognitiveservices](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Managed_Identity.png)
 
@@ -115,3 +124,9 @@ However, note that here the values are:
 - Query parameter name: `subscription-key`
 
 This helps emulate passing the `API_KEY` from a `python` app, where we can replace the Primary Key, for a Subscription Key.
+
+### PayG
+
+We'll follow the same process from PTU, but this time
+
+- Name: `foundry-payg-openai`
