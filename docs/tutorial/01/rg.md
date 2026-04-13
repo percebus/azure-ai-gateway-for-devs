@@ -11,7 +11,8 @@ For this tutorial, just use your username (i.e. `jcguerrero`)
 
 ## Region(s)
 
-For lots of the US resources, `eastus` is Azure's preferred region.
+- For lots of the US resources, `eastus` is Azure's preferred region. So will use that as our Primary region.
+- Some of the advanced OpenAI deployment models, are only available in certain regions, such as `eastus2`. So We'll use that as our Secondary region.
 
 ## Resource Group
 

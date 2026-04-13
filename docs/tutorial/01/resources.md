@@ -189,7 +189,7 @@ Leave as-is
 
 ### Review + create
 
-![Review + create](../../../assets/img/tutorial/eastus/foundry/ReviewCreate.png)
+![Review + create](../../../assets/img/tutorial/eastus/foundry/Review.png)
 
 ### Snapshot
 
