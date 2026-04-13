@@ -18,7 +18,7 @@ For this tutorial, just use your username (i.e. `jcguerrero`)
 
 ### Basics
 
-- Subscription: <your-subscription-id>
+- Subscription: `<your-subscription-id>`
 - Resource Group: `ai-gw-{stack-id}-rg`
 - Region: `(US) East US`.- `eastus`
 
