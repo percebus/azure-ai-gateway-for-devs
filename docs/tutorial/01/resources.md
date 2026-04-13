@@ -172,7 +172,7 @@ Leave as-is
 
 ![Network](../../../assets/img/tutorial/eastus/foundry/Network.png)
 
-> [!WARN]
+> [!WARNING]
 > This is not production grade. For a guide using VPNs, see [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)
 
 ### Identity
