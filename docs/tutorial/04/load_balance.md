@@ -44,10 +44,15 @@ Great! Now we have a pool. But how will APIM "know" when `-ptu-` is unhealthy en
 
 ![TooManyRequests](../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Circuit_breaker_settings/+/TooManyRequests.png)
 
-Oah! What was all that? Nothing much, basically:\
+Oah! What was all that? Nothing much, basically:
 
-> "If when I try getting a chat-completion from `-ptu-` I get 3 `429 Too Many Requests` responses within 1 minute,
+> "If when I try getting a chat-completion from `-ptu-`
+>
+> I get 3 `429 Too Many Requests` responses within 1 minute,
+>
 > APIM will consider the `-ptu-` backend unhealthy and will route traffic to the `-payg-` backend for the next 5 minutes. It will also respect the `Retry-After` header if present."
+
+These values are NOT meant to be definitive. Make sure you monitor and adjust them based on your actual traffic patterns and backend performance.
 
 > [!WARNING]
 > APIM currently supports only 1 circuit breaker rule!

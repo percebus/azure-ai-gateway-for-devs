@@ -1,0 +1,1 @@
+I want to query a redirects from an APIM load balancer to the respective backend service URL (foundry instance)

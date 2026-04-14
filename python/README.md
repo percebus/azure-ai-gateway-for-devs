@@ -25,11 +25,11 @@ Returns something like.-
 
 ```
 User: What tools are available to you?
-Agent: I have access to the following tools within the Microsoft functions namespace:
+Agent: I have access to a set of tools focused on Microsoft and Azure technologies documentation and coding examples:
 
-1. microsoft_docs_search: This tool allows me to search official Microsoft/Azure documentation to find relevant and trustworthy content for a user's query.
+1. microsoft_docs_search: Search official Microsoft/Azure documentation to find relevant content for a user's query.
+2. microsoft_code_sample_search: Search for code snippets and examples in official Microsoft Learn documentation.
+3. microsoft_docs_fetch: Fetch and convert a Microsoft Learn documentation webpage to markdown format for complete step-by-step procedures or tutorials.
 
-2. microsoft_code_sample_search: This tool helps me search for code snippets and examples in official Microsoft Learn documentation, which is useful for providing practical implementations and coding examples for Microsoft/Azure products and services.
-
-3. microsoft_docs_fetch: This tool enables me to fetch and convert a complete Microsoft Learn documentation webpage to markdown format, providing detailed and full content from Microsoft documentation.
+These tools help me provide accurate, detailed, and up-to-date information and code examples related to Microsoft and Azure technologies.
 ```

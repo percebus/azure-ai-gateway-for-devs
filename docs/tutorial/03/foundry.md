@@ -142,6 +142,16 @@ However, note that here the values are:
 
 This simplifies passing the `API_KEY` from a `python` app, where we can replace the **Primary Key**, for a **Subscription Key**.
 
+##### Diagnostic Logs
+
+- [x] Enable
+- Destination: `ai-gw-{stack-id}-eastus-appi`
+- Additional settings > Advanced Options: as-is But is fun to know that you can log frontend/backend request/response
+  - Frontend Request
+  - Frontend Response
+  - Backend Request
+  - Backend Response
+
 #### Test
 
 We'll test w/ the following endpoint:
