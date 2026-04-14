@@ -101,6 +101,15 @@ We will follow the same steps as above, but with a different model version upgra
 
 ![Playground](../../../assets/img/tutorial/eastus/foundry/Models/Playground.png)
 
+#### Monitor / metrics
+
+On the deployment model, click on the [ Metrics ] tab (Classic), or [ Monitor ] tab (New Foundry view).
+
+| mode        | img                                                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
+| New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
+
 ### PayG
 
 Now, switch to the PayG instance to configure the same deployment models.

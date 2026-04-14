@@ -1,3 +1,11 @@
+
+!**/Monitor/**
+!**/Monitor/Logs/**
+
+########################
+### Python.gitignore ### SRC:
+########################
+
 # Logs
 logs
 *.log
