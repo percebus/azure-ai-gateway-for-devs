@@ -65,7 +65,7 @@ However, since foundry includes Content Safety as part of its built-in APIs, we'
 
 See how APIM read the OpenAPI spec (not to be confused with OpenAI) for all the methods.
 
-[!foundry-ptu-openai](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design.png)
+![foundry-ptu-openai](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design.png)
 
 Note that in "Inbound processing" there is an XML symbol like this: `</>`. Click it
 
@@ -114,6 +114,9 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 
 ![Settings](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Settings_General.png)
 
+> [!NOTE]
+> Remember that "NOTE: `-openai` suffix is important?"
+
 ##### Subscription
 
 APIM by default, uses `Ocp-Apim-Subscription-Key`header for subscriptions (we'll get to them later)
@@ -123,7 +126,7 @@ However, note that here the values are:
 - Header name: `api-key`
 - Query parameter name: `subscription-key`
 
-This helps emulate passing the `API_KEY` from a `python` app, where we can replace the Primary Key, for a Subscription Key.
+This simplifies passing the `API_KEY` from a `python` app, where we can replace the **Primary Key**, for a **Subscription Key**.
 
 ### PayG
 
