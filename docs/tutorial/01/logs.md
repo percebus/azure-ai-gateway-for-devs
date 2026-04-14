@@ -1,4 +1,4 @@
-# Create Foundry Instances
+# Azure Monitoring services
 
 ## Stacks
 
@@ -11,7 +11,7 @@
 
 ## Log Analytics Workspace
 
-![LAW](../../../assets/img/resources/law.png)
+![LAW](../../../assets/img/buttons/law.png)
 
 We will funnel of our logs into App Insights for monitoring and diagnostics, using log analytics workspace.
 
@@ -50,11 +50,11 @@ For tutorial purposes, you can create only 1 Log Analytics Workspace + App Insig
 
 ### Basics
 
-![LAW - Basics](../../../assets/img/tutorial/eastus/law/Basics.png)
+![LAW - Basics](../../../assets/img/tutorial/eastus/law/+/Basics.png)
 
 ### Review + create
 
-![LAW - Review + Create](../../../assets/img/tutorial/eastus/law/Review.png)
+![LAW - Review + Create](../../../assets/img/tutorial/eastus/law/+/Review.png)
 
 ### Snapshot
 
@@ -64,7 +64,7 @@ You should end up with this
 
 ## App Insights
 
-![appi](../../../assets/img/resources/appi.png)
+![appi](../../../assets/img/buttons/appi.png)
 
 For each LAW, we will create an App Insights instance to collect and analyze telemetry data.
 
@@ -103,7 +103,7 @@ If you only created 1 Log Analytics Workspace, only create 1 App Insights instan
 
 ### Basics
 
-![App Insights - Basics](../../../assets/img/tutorial/eastus/appi/Basics.png)
+![App Insights - Basics](../../../assets/img/tutorial/eastus/appi/+/Basics.png)
 
 ### Snapshot
 
@@ -112,85 +112,3 @@ If you only created 1 Log Analytics Workspace, only create 1 App Insights instan
 #### Resource Visualization
 
 ![architecture 03](../../../assets/img/architecture/03_appi_visualizer.png)
-
-## Foundry Instances
-
-![MS Foundry](../../../assets/img/resources/foundry.png)
-
-For foundry, we will create 2 instances.
-
-1. One will represent (pre-)[P]aid [T]oken [U]sage: `ptu`
-2. The other is a [P]ay [a]s [y]ou [G]o fallback instance: `payg`
-
-| Instance | Name                                    | Region                       |
-| -------- | --------------------------------------- | ---------------------------- |
-| PTU      | `ai-gw-{stack-id}-eastus-foundry-ptu`   | `(US) East US`.- `eastus`    |
-| PAYG     | `ai-gw-{stack-id}-eastus2-foundry-payg` | `(US) East US 2`.- `eastus2` |
-
-<table>
-  <thead>
-    <tr>
-      <th>eastus</th>
-      <th>eastus2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-            <li>Name: <pre>ai-gw-{stack-id}-eastus-foundry-ptu</pre></li>
-            <li>Region: <pre>(US) East US`.- `eastus`</pre></li>
-            <li>Default project name: <pre>ai-gw-{stack-id}-eastus-foundry-ptu-proj</pre></li>
-            <li>Application Insights: <pre>ai-gw-{stack-id}-eastus-appi</pre> (created above)</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-            <li>Name: <pre>ai-gw-{stack-id}-eastus2-foundry-payg</pre></li>
-            <li>Region: <pre>(US) East US 2`.- `eastus2`</pre></li>
-            <li>Default project name: <pre>ai-gw-{stack-id}-eastus2-foundry-payg-proj</pre></li>
-            <li>Application Insights: <pre>ai-gw-{stack-id}-eastus2-appi</pre> (created above)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Basics
-
-![Foundry - PTU](../../../assets/img/tutorial/eastus/foundry/Basics.png)
-
-### Storage
-
-#### Credential storage and application logging
-
-- Application Insights: `ai-gw-{stack-id}-eastus-appi` (created above)
-
-### Network
-
-Leave as-is
-
-![Network](../../../assets/img/tutorial/eastus/foundry/Network.png)
-
-> [!WARN]
-> This is not production grade. For a guide using VPNs, see [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)
-
-### Identity
-
-Leave as-is
-
-![Identity](../../../assets/img/tutorial/eastus/foundry/Identity.png)
-
-### Encryption
-
-Leave as-is
-
-![Encryption](../../../assets/img/tutorial/eastus/foundry/Encryption.png)
-
-### Review + create
-
-![Review + create](../../../assets/img/tutorial/eastus/foundry/Review.png)
-
-### Snapshot
-
-![Snapshot w/ Foundry](../../../assets/img/architecture/04_foundry_rg.png)

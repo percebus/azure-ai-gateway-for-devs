@@ -1,0 +1,5 @@
+"""Constants."""
+
+HTTP_STATUS_OK = 200
+
+MILLISECONDS_PER_SECOND = 1000

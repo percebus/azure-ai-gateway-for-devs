@@ -22,14 +22,14 @@ For this tutorial, just use your username (i.e. `jcguerrero`)
 - Resource Group: `ai-gw-{stack-id}-rg`
 - Region: `(US) East US`.- `eastus`
 
-![Resource Group - Basics](../../../assets/img/tutorial/rg/Basics.png)\*
+![Resource Group - Basics](../../../assets/img/tutorial/eastus/rg/+/Basics.png)
 
 ### Tags
 
 Always tag your resources. Or at the very least the Resource Group.
 
-![Resource Group - Tags](../../../assets/img/tutorial/rg/Tags.png)
+![Resource Group - Tags](../../../assets/img/tutorial/eastus/rg/+/Tags.png)
 
 ### Review + create
 
-![Resource Group - Review + Create](../../../assets/img/tutorial/rg/Review.png)
+![Resource Group - Review + Create](../../../assets/img/tutorial/eastus/rg/+/Review.png)

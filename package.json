@@ -27,6 +27,12 @@
     "doc": "docs"
   },
   "scripts": {
+    "_prettier": "prettier .",
+    "prettier:check": "npm run _prettier -- --check",
+    "prettier:write": "npm run _prettier -- --write",
+    "lint": "npm run prettier:check",
+    "format": "npm run prettier:write",
+    "postformat": "npm run lint",
     "test": "exit 0"
   },
   "devDependencies": {
