@@ -23,6 +23,15 @@ In a single place, you can see all the logs from all components connected to App
 
 We can see how `foundry-openai-lb` forwarded to `-ptu`
 
+### Live metrics
+
+1. App Insights > Investigate > Live metrics.
+1. Wait for the "app" to connect.
+1. Wait until you see a flat line.
+1. Use your `python` client a couple of times.
+
+![Live metrics](../../../assets/img/tutorial/eastus/appi/Investigate/Live_metrics/python.png)
+
 ## Monitoring
 
 ### Logs
