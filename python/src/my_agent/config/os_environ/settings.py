@@ -18,8 +18,6 @@ class Settings(BaseSettings):
     )
 
     debug: bool = Field(default=False)
-    dry_run: bool = Field(default=True)
-    environment: str = Field(min_length=2)
 
     azure_openai: AzureOpenAISettings = Field()
 
