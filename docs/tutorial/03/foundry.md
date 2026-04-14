@@ -95,6 +95,8 @@ Inside, you'll see
 
 Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />`
 
+#### Backends
+
 1. Go to APIs > Backends. and find the backend with the ID `foundry-ptu-openai-ai-endpoint`. This is the backend service that the APIM policy is routing requests to.
 1. Go to Authorization credentials > Managed Identity. Look at the following fields:
 
@@ -102,6 +104,18 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 - Resource ID: `https://cognitiveservices.azure.com/`
 
 ![cognitiveservices](../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
+
+#### Managed Identity
+
+"System managed identity" huh? what is up w/ that?
+
+Let's go to
+
+1. APIM > Security > Managed identities
+1. Click on [ Azure role assignments ]. NOTE: This is RBAC
+1. Note that It got connected w/ "Azure AI User"
+
+![Azure AI User](../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_01.png)
 
 #### Settings
 
@@ -128,8 +142,119 @@ However, note that here the values are:
 
 This simplifies passing the `API_KEY` from a `python` app, where we can replace the **Primary Key**, for a **Subscription Key**.
 
+#### Test
+
+We'll test w/ the following endpoint:
+
+- "POST Creates a completion for the chat message"
+  - Template parameters:
+    - `deployment-id`: `gpt-4.1-mini-global-standard-latest`
+    - `api-version`: `2025-01-01-preview`
+
+![POST](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Test/POST/chat/completions.png)
+
+Replies w/ something like this
+
+```json
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "filtered": false,
+          "detected": false
+        },
+        "protected_material_text": {
+          "filtered": false,
+          "detected": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "I'm doing well, thank you! How can I assist you today?",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1776185964,
+  "id": "chatcmpl-DUbOeGtdzUYiVCXIhCNOIAu2LOGPd",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "filtered": false,
+          "detected": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "service_tier": "default",
+  "system_fingerprint": "fp_b6f445fc1c",
+  "usage": {
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens": 20,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 35
+  }
+}
+```
+
 ### PayG
 
 We'll follow the same process from PTU, but this time
 
 - Name: `foundry-payg-openai`
+
+#### Managed identities
+
+Verify that the managed identity has the "Azure AI User" role assigned.
+
+![Azure AI User](../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_02.png)
