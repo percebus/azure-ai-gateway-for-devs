@@ -1,6 +1,21 @@
 
 !*.env.example*
 
+##################################
+### VisualStudioCode.gitignore ### SRC https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+##################################
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix
+
 ########################
 ### Python.gitignore ### SRC: https://github.com/github/gitignore/blob/main/Python.gitignore
 ########################
