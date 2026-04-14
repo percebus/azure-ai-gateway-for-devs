@@ -1,132 +1,94 @@
-# Foundry instances
+# LLM Deployment models
 
-## Add APIs
+Once you've created your Foundry instances, head over to the `ptu` instance to configure your deployment models.
 
-We'll add both Foundry instances as APIs in APIM.
+1. Click on foundry resource
+2. Overview
+3. Click on [ Go to Foundry portal ]
 
-1. APIs > APIs
-2. Click on "Microsoft Foundry"
+## New VS classic foundry
+
+You will see this toggle:
+
+![New Foundry](../../../assets/img/buttons/New_Foundry.png)
+
+| Mode    | img                                                                                 |
+| ------- | ----------------------------------------------------------------------------------- |
+| Classic | ![Classic](../../../assets/img/tutorial/eastus/foundry/portal/Classic/Overview.png) |
+| New     | ![New](../../../assets/img/tutorial/eastus/foundry/portal/New/Home.png)             |
+
+Make sure you familiarize with both views.
+
+- As some new content is only available in the new Foundry view.
+- But some other has not been migrated, only being available in "Classic" (old) Foundry.
+
+## Models
+
+We will create the following deployment models:
+
+| region  | name | model          | deployment-name                       | Model upgrade policy | TPM  | Guardrails  |
+| ------- | ---- | -------------- | ------------------------------------- | -------------------- | ---- | ----------- |
+| eastus  | ptu  | `gpt-4.1-mini` | `gpt-4.1-mini-global-standard-latest` | "Upgrade"            | 100K | `DefaultV2` |
+| eastus  | ptu  | `gpt-4.1-mini` | `gpt-4.1-mini-global-standard-stable` | "Expires"            | 100K | `DefaultV2` |
+| eastus2 | payg | `gpt-4.1-mini` | `gpt-4.1-mini-global-standard-latest` | "Upgrade"            | 100K | `DefaultV2` |
+| eastus2 | payg | `gpt-4.1-mini` | `gpt-4.1-mini-global-standard-stable` | "Expires"            | 100K | `DefaultV2` |
+
+At the end, we will have the following deployment models configured:
+
+| deployment name                       | eastus | eastus2 | Model upgrade policy |
+| ------------------------------------- | ------ | ------- | -------------------- |
+| `gpt-4.1-mini-global-standard-latest` | ✅     | ✅      | "Upgrade"            |
+| `gpt-4.1-mini-global-standard-stable` | ✅     | ✅      | "Expires"            |
 
 ### PTU
 
-#### Select AI Service
+We'll be creating the following deployment models in the PTU instance.-
 
-1. Filter by "PTU"
-2. Select the PTU instance
+![Deployments](../../../assets/img/tutorial/eastus/foundry/Models/Deployments.png)
 
-![Select PTU instance](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Select_AI_Service.png)
+| latest                                                                                                                               | stable                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/Models/+/gpt-4.1-mini-global-standard-stable.png) |
 
-#### Configure Model Route
+#### gpt-4.1-mini-global-standard-latest
 
-Use `foundry-ptu-openai` for all 3
+1. Click Build > Models
+2. Click ( Deploy a base model )
+3. Choose `gpt-4.1-mini`
+4. Click ( Deploy v ) > "Custom settings"
+5. Choose these settings
 
-- Display name:
-- Name:
-- Base path:
-
-For **Options**, Leave "Azure OpenAI" selected.
-
-![Configure Model Route](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Configure_Model_Route.png)
-
-> [!NOTE]
-> The `-openai` suffix is important.
-
-#### Manage token consumption
-
-We will manually do this section later. However, we want you to know where that data comes from.
-
-Note 2 important details:
-
-- Limit by: Subscription
-- Token quota
-
-Please select everything as in the photo.
-
-![Manage token consumption](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Manage_token_consumption.png)
-
-#### Apply semantic caching
-
-Semantic caching is outside the scope of this tutorial. However, you can experiment yourself by creating a ReDIS cache and configuring it in APIM.
+- **Deployment name**: `gpt-4.1-mini-global-standard-latest`
+- **Deployment type**: "Global Standard" (as-is)
+- > **Model version settings**
+  - **Model version**: (latest)
+  - **Model version upgrade policy**: "Upgrade once new default version becomes available"
+- **Tokens per Minute Rate Limit**: `100000` (100K)
+- **Guardrails**: `DefaultV2`
 
 > [!WARNING]
-> OpenAI sometimes would reply w/ status 200, and message "Something went wrong". This gets cached
+> Tokens per minute is shared across ALL GPT deployments. If you choose a hight value, you won't be able to create subsequent deployment models.
 
-#### Setup AI content safety
+##### gpt-4.1-mini-global-standard-stable
 
-APIM allows to connect directly to a Content Safety instance.
+We will follow the same steps as above, but with a different model version upgrade policy.
 
-However, since foundry includes Content Safety as part of its built-in APIs, we'll do that instead in a later step.
+**Model version upgrade policy**: "Once the current version expires" <<< THIS IS DIFFERENT
 
-#### Review + create
+1. Click Build > Models
+2. Click ( Deploy a base model )
+3. Choose `gpt-4.1-mini`
+4. Click ( Deploy v ) > "Custom settings"
+5. Choose these settings
 
-![Review + create](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Review.png)
-
-#### Design
-
-See how APIM read the OpenAPI spec (not to be confused with OpenAI) for all the methods.
-
-[!foundry-ptu-openai](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design.png)
-
-Note that in "Inbound processing" there is an XML symbol like this: `</>`. Click it
-
-![Inbound processing](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design_Inbound_processing.png)
-
-Inside, you'll see
-
-```xml
-<policies>
-    <inbound>
-        <base />
-
-        <!-- APIM-to-service -->
-        <set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />
-
-        <!-- Sets limit -->
-        <llm-token-limit
-          remaining-quota-tokens-header-name="remaining-tokens"
-          remaining-tokens-header-name="remaining-tokens"
-          tokens-per-minute="1000"
-          token-quota="10000" token-quota-period="Hourly"
-          counter-key="@(context.Subscription.Id)"
-          estimate-prompt-tokens="true"
-          tokens-consumed-header-name="consumed-tokens" />
-    </inbound>
-```
-
-Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />`
-
-1. Go to APIs > Backends. and find the backend with the ID `foundry-ptu-openai-ai-endpoint`. This is the backend service that the APIM policy is routing requests to.
-1. Go to Authorization credentials > Managed Identity. Look at the following fields:
-
-- Client identity: System managed identity
-- Resource ID: `https://cognitiveservices.azure.com/`
-
-![cognitiveservices](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Managed_Identity.png)
-
-#### Settings
-
-1. Go back to the APIs > APIs > `foundry-ptu-openai`.
-1. Click on "Settings".
-
-##### General
-
-1. Note that the wizard kindly added `/openai` suffixes for the APIs.
-
-![Settings](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Settings_General.png)
-
-##### Subscription
-
-APIM by default, uses `Ocp-Apim-Subscription-Key`header for subscriptions (we'll get to them later)
-
-However, note that here the values are:
-
-- Header name: `api-key`
-- Query parameter name: `subscription-key`
-
-This helps emulate passing the `API_KEY` from a `python` app, where we can replace the Primary Key, for a Subscription Key.
+- **Deployment name**: `gpt-4.1-mini-global-standard-stable`
+- **Deployment type**: "Global Standard" (as-is)
+- > **Model version settings**
+  - **Model version**: (latest)
+  - **Model version upgrade policy**: "Once the current version expires" <<< THIS IS DIFFERENT
+- **Tokens per Minute Rate Limit**: `100000` (100K)
+- **Guardrails**: `DefaultV2`
 
 ### PayG
 
-We'll follow the same process from PTU, but this time
-
-- Name: `foundry-payg-openai`
+Now, switch to the PayG instance to configure the same deployment models.

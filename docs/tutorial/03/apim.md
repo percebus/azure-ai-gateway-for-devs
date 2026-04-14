@@ -1,6 +1,6 @@
 # Azure API [M]anagement
 
-![APIM](../../../assets/img/resources/apim.png)
+![APIM](../../../assets/img/buttons/apim.png)
 
 We'll create an instance in the primary region `eastus`
 
@@ -31,7 +31,7 @@ Bear in mind that APIM can span accross multiple regions for high availability a
 
 - Unit(s): 1
 
-![Basics](../../../assets/img/tutorial/eastus/apim/Basics.png)
+![Basics](../../../assets/img/tutorial/eastus/apim/+/Basics.png)
 
 ### Monitor + secure
 
@@ -43,7 +43,7 @@ Bear in mind that APIM can span accross multiple regions for high availability a
 - [x] Application Insights
   - Choose an instance: `ai-gw-{stack-id}-eastus-appi`
 
-![Monitor and Secure](../../../assets/img/tutorial/eastus/apim/Monitor.png)
+![Monitor and Secure](../../../assets/img/tutorial/eastus/apim/+/Monitor.png)
 
 ### Networking
 
@@ -52,7 +52,7 @@ Leave as-is
 > [!WARNING]
 > This is not production grade. For a guide using VPNs, see [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)
 
-![Networking](../../../assets/img/tutorial/eastus/apim/Networking.png)
+![Networking](../../../assets/img/tutorial/eastus/apim/+/Networking.png)
 
 ### Managed identity
 
@@ -63,11 +63,11 @@ Leave as-is
 > [!WARNING]
 > This is VERY IMPORTANT. It will allow APIM to authenticate against Foundry
 
-![Managed Identity](../../../assets/img/tutorial/eastus/apim/Managed_identity.png)
+![Managed Identity](../../../assets/img/tutorial/eastus/apim/+/Managed_identity.png)
 
 ### Review + create
 
-![Review + create](../../../assets/img/tutorial/eastus/apim/Review.png)
+![Review + create](../../../assets/img/tutorial/eastus/apim/+/Review.png)
 
 ### Snapshot
 

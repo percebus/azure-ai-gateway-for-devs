@@ -11,7 +11,7 @@
 
 ## Log Analytics Workspace
 
-![LAW](../../../assets/img/resources/law.png)
+![LAW](../../../assets/img/buttons/law.png)
 
 We will funnel of our logs into App Insights for monitoring and diagnostics, using log analytics workspace.
 
@@ -50,11 +50,11 @@ For tutorial purposes, you can create only 1 Log Analytics Workspace + App Insig
 
 ### Basics
 
-![LAW - Basics](../../../assets/img/tutorial/eastus/law/Basics.png)
+![LAW - Basics](../../../assets/img/tutorial/eastus/law/+/Basics.png)
 
 ### Review + create
 
-![LAW - Review + Create](../../../assets/img/tutorial/eastus/law/Review.png)
+![LAW - Review + Create](../../../assets/img/tutorial/eastus/law/+/Review.png)
 
 ### Snapshot
 
@@ -64,7 +64,7 @@ You should end up with this
 
 ## App Insights
 
-![appi](../../../assets/img/resources/appi.png)
+![appi](../../../assets/img/buttons/appi.png)
 
 For each LAW, we will create an App Insights instance to collect and analyze telemetry data.
 
@@ -103,7 +103,7 @@ If you only created 1 Log Analytics Workspace, only create 1 App Insights instan
 
 ### Basics
 
-![App Insights - Basics](../../../assets/img/tutorial/eastus/appi/Basics.png)
+![App Insights - Basics](../../../assets/img/tutorial/eastus/appi/+/Basics.png)
 
 ### Snapshot
 
@@ -115,7 +115,7 @@ If you only created 1 Log Analytics Workspace, only create 1 App Insights instan
 
 ## Foundry Instances
 
-![MS Foundry](../../../assets/img/resources/foundry.png)
+![MS Foundry](../../../assets/img/buttons/foundry.png)
 
 For foundry, we will create 2 instances.
 
@@ -158,7 +158,7 @@ For foundry, we will create 2 instances.
 
 ### Basics
 
-![Foundry - PTU](../../../assets/img/tutorial/eastus/foundry/Basics.png)
+![Foundry - PTU](../../../assets/img/tutorial/eastus/foundry/+/Basics.png)
 
 ### Storage
 
@@ -170,7 +170,7 @@ For foundry, we will create 2 instances.
 
 Leave as-is
 
-![Network](../../../assets/img/tutorial/eastus/foundry/Network.png)
+![Network](../../../assets/img/tutorial/eastus/foundry/+/Network.png)
 
 > [!WARNING]
 > This is not production grade. For a guide using VPNs, see [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)
@@ -179,17 +179,17 @@ Leave as-is
 
 Leave as-is
 
-![Identity](../../../assets/img/tutorial/eastus/foundry/Identity.png)
+![Identity](../../../assets/img/tutorial/eastus/foundry/+/Identity.png)
 
 ### Encryption
 
 Leave as-is
 
-![Encryption](../../../assets/img/tutorial/eastus/foundry/Encryption.png)
+![Encryption](../../../assets/img/tutorial/eastus/foundry/+/Encryption.png)
 
 ### Review + create
 
-![Review + create](../../../assets/img/tutorial/eastus/foundry/Review.png)
+![Review + create](../../../assets/img/tutorial/eastus/foundry/+/Review.png)
 
 ### Snapshot
 
