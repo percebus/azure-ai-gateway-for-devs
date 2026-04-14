@@ -101,7 +101,7 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 - Client identity: System managed identity
 - Resource ID: `https://cognitiveservices.azure.com/`
 
-![cognitiveservices](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Managed_Identity.png)
+![cognitiveservices](../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
 
 #### Settings
 
