@@ -71,7 +71,7 @@ For this section, we will be following the steps from this other tutorial: [Secu
 4. Wait 10 Missisipis (APIM sometime takes a few seconds to apply the changes).
 1. Restart MCP in the `.vscode/mcp.json` file.
 1. You should a similar following error: ![Error](../../../../assets/img/tutorial/vscode/mcp/Error.png)
-1. Remember that subscription from [python/.env](../../../../python/.env) Copy it to `.vscode/mcp.json` under the `servers` section for the `apim-mslearn` server:
+1. Remember that subscription from [python/.env](../../../../python/.env) ? Copy it to `.vscode/mcp.json` under the `servers` section for the `apim-mslearn` server:
 
 ```json
 {
@@ -87,3 +87,5 @@ For this section, we will be following the steps from this other tutorial: [Secu
   "inputs": []
 }
 ```
+
+8. Now it should work without the error, as the subscription key is included in the request headers.
