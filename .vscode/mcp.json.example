@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "mslearn": {
+      "url": "https://learn.microsoft.com/api/mcp",
+      "type": "http"
+    },
+    "apim-mslearn": {
+      "url": "https://ai-gw-FIXME-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp",
+      "type": "http",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "FIXME"
+      }
+    }
+  },
+  "inputs": []
+}

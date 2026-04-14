@@ -2,9 +2,9 @@
 !**/Monitor/**
 !**/Monitor/Logs/**
 
-########################
-### Python.gitignore ### SRC:
-########################
+######################
+### Node.gitignore ### SRC: https://github.com/github/gitignore/blob/main/Node.gitignore
+######################
 
 # Logs
 logs
@@ -89,6 +89,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+.output
 
 # Gatsby files
 .cache/
@@ -133,6 +134,9 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# pnpm
+.pnpm-store
+
 # yarn v3
 .pnp.*
 .yarn/*
@@ -142,6 +146,7 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
-# Vite logs files
+# Vite files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.vite/

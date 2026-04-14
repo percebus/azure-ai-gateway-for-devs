@@ -14,7 +14,7 @@ We'll add both Foundry instances as APIs in APIM.
 1. Filter by "PTU"
 2. Select the PTU instance
 
-![Select PTU instance](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Select_AI_Service.png)
+![Select PTU instance](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Select_AI_Service.png)
 
 #### Configure Model Route
 
@@ -26,7 +26,7 @@ Use `foundry-ptu-openai` for all 3
 
 For **Options**, Leave "Azure OpenAI" selected.
 
-![Configure Model Route](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Configure_Model_Route.png)
+![Configure Model Route](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Configure_Model_Route.png)
 
 > [!NOTE]
 > The `-openai` suffix is important.
@@ -42,7 +42,7 @@ Note 2 important details:
 
 Please select everything as in the photo.
 
-![Manage token consumption](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Manage_token_consumption.png)
+![Manage token consumption](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Manage_token_consumption.png)
 
 #### Apply semantic caching
 
@@ -59,17 +59,17 @@ However, since foundry includes Content Safety as part of its built-in APIs, we'
 
 #### Review + create
 
-![Review + create](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Review.png)
+![Review + create](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Review.png)
 
 #### Design
 
 See how APIM read the OpenAPI spec (not to be confused with OpenAI) for all the methods.
 
-![foundry-ptu-openai](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design.png)
+![foundry-ptu-openai](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design.png)
 
 Note that in "Inbound processing" there is an XML symbol like this: `</>`. Click it
 
-![Inbound processing](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design_Inbound_processing.png)
+![Inbound processing](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Design_Inbound_processing.png)
 
 Inside, you'll see
 
@@ -103,7 +103,7 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 - Client identity: System managed identity
 - Resource ID: `https://cognitiveservices.azure.com/`
 
-![cognitiveservices](../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
+![cognitiveservices](../../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
 
 #### Managed Identity
 
@@ -115,7 +115,7 @@ Let's go to
 1. Click on [ Azure role assignments ]. NOTE: This is RBAC
 1. Note that It got connected w/ "Azure AI User"
 
-![Azure AI User](../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_01.png)
+![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_01.png)
 
 #### Settings
 
@@ -126,7 +126,7 @@ Let's go to
 
 1. Note that the wizard kindly added `/openai` suffixes for the APIs.
 
-![Settings](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Settings_General.png)
+![Settings](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Settings_General.png)
 
 > [!NOTE]
 > Remember that "NOTE: `-openai` suffix is important?"
@@ -161,7 +161,7 @@ We'll test w/ the following endpoint:
     - `deployment-id`: `gpt-4.1-mini-global-standard-latest`
     - `api-version`: `2025-01-01-preview`
 
-![POST](../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Test/POST/chat/completions.png)
+![POST](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Test/POST/chat/completions.png)
 
 Replies w/ something like this
 
@@ -267,4 +267,4 @@ We'll follow the same process from PTU, but this time
 
 Verify that the managed identity has the "Azure AI User" role assigned.
 
-![Azure AI User](../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_02.png)
+![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_02.png)

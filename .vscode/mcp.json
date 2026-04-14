@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "apim-mslearn": {
+      "url": "https://ai-gw-jcguerrero-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp",
+      "type": "http",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "2c03ae8719bb4b92a172b316d8999aae"
+      }
+    }
+  },
+  "inputs": []
+}

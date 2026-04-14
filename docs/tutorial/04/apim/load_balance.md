@@ -42,7 +42,7 @@ Great! Now we have a pool. But how will APIM "know" when `-ptu-` is unhealthy en
   - Minutes:`5`
 - **Check 'Retry-After header in HTTP response**: True (Accept)
 
-![TooManyRequests](../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Circuit_breaker_settings/+/TooManyRequests.png)
+![TooManyRequests](../../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Circuit_breaker_settings/+/TooManyRequests.png)
 
 Oah! What was all that? Nothing much, basically:
 
