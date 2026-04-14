@@ -42,6 +42,11 @@ At the end, we will have the following deployment models configured:
 
 ### PTU
 
+For this excercise, we will be using the "New Foundry" view.
+
+> [!NOTE]
+> Be sure to go back and forth between the "New" and "Classic" Foundry views to familiarize yourself with both.
+
 We'll be creating the following deployment models in the PTU instance.-
 
 ![Deployments](../../../assets/img/tutorial/eastus/foundry/Models/Deployments.png)
@@ -53,10 +58,10 @@ We'll be creating the following deployment models in the PTU instance.-
 #### gpt-4.1-mini-global-standard-latest
 
 1. Click Build > Models
-2. Click ( Deploy a base model )
-3. Choose `gpt-4.1-mini`
-4. Click ( Deploy v ) > "Custom settings"
-5. Choose these settings
+1. Click ( Deploy a base model )
+1. Choose `gpt-4.1-mini`
+1. Click ( Deploy v ) > "Custom settings"
+1. Choose these settings
 
 - **Deployment name**: `gpt-4.1-mini-global-standard-latest`
 - **Deployment type**: "Global Standard" (as-is)
@@ -69,17 +74,17 @@ We'll be creating the following deployment models in the PTU instance.-
 > [!WARNING]
 > Tokens per minute is shared across ALL GPT deployments. If you choose a hight value, you won't be able to create subsequent deployment models.
 
-##### gpt-4.1-mini-global-standard-stable
+#### gpt-4.1-mini-global-standard-stable
 
 We will follow the same steps as above, but with a different model version upgrade policy.
 
 **Model version upgrade policy**: "Once the current version expires" <<< THIS IS DIFFERENT
 
 1. Click Build > Models
-2. Click ( Deploy a base model )
-3. Choose `gpt-4.1-mini`
-4. Click ( Deploy v ) > "Custom settings"
-5. Choose these settings
+1. Click ( Deploy a base model )
+1. Choose `gpt-4.1-mini`
+1. Click ( Deploy v ) > "Custom settings"
+1. Choose these settings
 
 - **Deployment name**: `gpt-4.1-mini-global-standard-stable`
 - **Deployment type**: "Global Standard" (as-is)
@@ -88,6 +93,13 @@ We will follow the same steps as above, but with a different model version upgra
   - **Model version upgrade policy**: "Once the current version expires" <<< THIS IS DIFFERENT
 - **Tokens per Minute Rate Limit**: `100000` (100K)
 - **Guardrails**: `DefaultV2`
+
+#### Test
+
+1. Go to Model > Playground
+1. Type "Hi" and click "Send" (paper plane)
+
+![Playground](../../../assets/img/tutorial/eastus/foundry/Models/Playground.png)
 
 ### PayG
 
