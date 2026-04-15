@@ -1,4 +1,4 @@
-# APIM Policy fragments
+# Re-using policies
 
 Remember the Token Limit quota policy we added to Both APIs? Imagine a business requirement like this
 
