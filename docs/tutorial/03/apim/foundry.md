@@ -1,22 +1,64 @@
 # Foundry + APIM
 
-## Add APIs
+## APIs
+
+### Add global policies
+
+What if we want to apply a policy that applies to EACH AND EVERY API (no exceptions)
+
+1. APIM > APIs
+2. Click on "All APIs" (Is hard to see that is a clickable thingy, looks more like a header)
+3. Click on `set-header` button
+
+![set-header](../../../../assets/img/tutorial/eastus/apim/APIs/+/set-header/x-powered-by.png)
+
+Which will create `append` the following headers to all output
+
+```
+<!--
+    IMPORTANT:
+    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
+    - Only the <forward-request> policy element can appear within the <backend> section element.
+    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.
+    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.
+    - To add a policy position the cursor at the desired insertion point and click on the round button associated with the policy.
+    - To remove a policy, delete the corresponding policy statement from the policy document.
+    - Policies are applied in the order of their appearance, from the top down.
+-->
+<policies>
+    <inbound />
+    <backend>
+        <forward-request />
+    </backend>
+    <outbound>
+        <set-header name="x-powered-by" exists-action="append">
+            <value>Bananas</value>
+            <value>{user-name}</value>
+        </set-header>
+    </outbound>
+    <on-error />
+</policies>
+```
+
+We'll validate this in a bit.
+
+### Foundries
 
 We'll add both Foundry instances as APIs in APIM.
 
 1. APIs > APIs
 2. Click on "Microsoft Foundry"
 
-### PTU
+#### PTU
 
-#### Select AI Service
+##### Select AI Service
 
 1. Filter by "PTU"
 2. Select the PTU instance
 
 ![Select PTU instance](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Select_AI_Service.png)
 
-#### Configure Model Route
+##### Configure Model Route
 
 Use `foundry-ptu-openai` for all 3
 
@@ -31,7 +73,7 @@ For **Options**, Leave "Azure OpenAI" selected.
 > [!NOTE]
 > The `-openai` suffix is important.
 
-#### Manage token consumption
+##### Manage token consumption
 
 We will manually do this section later. However, we want you to know where that data comes from.
 
@@ -44,24 +86,24 @@ Please select everything as in the photo.
 
 ![Manage token consumption](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Manage_token_consumption.png)
 
-#### Apply semantic caching
+##### Apply semantic caching
 
 Semantic caching is outside the scope of this tutorial. However, you can experiment yourself by creating a ReDIS cache and configuring it in APIM.
 
 > [!WARNING]
 > OpenAI sometimes would reply w/ status 200, and message "Something went wrong". This gets cached
 
-#### Setup AI content safety
+##### Setup AI content safety
 
 APIM allows to connect directly to a Content Safety instance.
 
 However, since foundry includes Content Safety as part of its built-in APIs, we'll do that instead in a later step.
 
-#### Review + create
+##### Review + create
 
 ![Review + create](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/+/Review.png)
 
-#### Design
+##### Design
 
 See how APIM read the OpenAPI spec (not to be confused with OpenAI) for all the methods.
 
@@ -93,9 +135,10 @@ Inside, you'll see
     </inbound>
 ```
 
-Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />`
+> [!IMPORTANT]
+> Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />
 
-#### Backends
+##### Backends
 
 1. Go to APIs > Backends. and find the backend with the ID `foundry-ptu-openai-ai-endpoint`. This is the backend service that the APIM policy is routing requests to.
 1. Go to Authorization credentials > Managed Identity. Look at the following fields:
@@ -105,7 +148,7 @@ Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foun
 
 ![cognitiveservices](../../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
 
-#### Managed Identity
+##### Managed Identity
 
 "System managed identity" huh? what is up w/ that?
 
@@ -117,12 +160,12 @@ Let's go to
 
 ![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_01.png)
 
-#### Settings
+##### Settings
 
 1. Go back to the APIs > APIs > `foundry-ptu-openai`.
 1. Click on "Settings".
 
-##### General
+###### General
 
 1. Note that the wizard kindly added `/openai` suffixes for the APIs.
 
@@ -131,7 +174,7 @@ Let's go to
 > [!NOTE]
 > Remember that "NOTE: `-openai` suffix is important?"
 
-##### Subscription
+###### Subscription
 
 APIM by default, uses `Ocp-Apim-Subscription-Key`header for subscriptions (we'll get to them later)
 
@@ -142,7 +185,7 @@ However, note that here the values are:
 
 This simplifies passing the `API_KEY` from a `python` app, where we can replace the **Primary Key**, for a **Subscription Key**.
 
-##### Diagnostic Logs
+###### Diagnostic Logs
 
 - [x] Enable
 - Destination: `ai-gw-{stack-id}-eastus-appi`
@@ -152,7 +195,7 @@ This simplifies passing the `API_KEY` from a `python` app, where we can replace 
   - Backend Request
   - Backend Response
 
-#### Test
+##### Test
 
 We'll test w/ the following endpoint:
 
@@ -164,6 +207,26 @@ We'll test w/ the following endpoint:
 ![POST](../../../../assets/img/tutorial/eastus/apim/APIs/Foundry/ptu/Test/POST/chat/completions.png)
 
 Replies w/ something like this
+
+**HTTP Respose**
+
+**Message**
+
+(Headers)
+
+```
+x-content-type-options: nosniff
+x-ms-client-request-id: Not-Set
+x-ms-deployment-name: gpt-4.1-mini-global-standard-stable
+x-ms-region: East US
+x-ratelimit-limit-requests: 100
+x-ratelimit-limit-tokens: 100000
+x-ratelimit-remaining-requests: 99
+x-ratelimit-remaining-tokens: 99995
+x-powered-by: Bananas,JCGuerrero <<< Look mom! I'm famous
+```
+
+(Body)
 
 ```json
 {
@@ -257,13 +320,13 @@ Replies w/ something like this
 }
 ```
 
-### PayG
+#### PayG
 
 We'll follow the same process from PTU, but this time
 
 - Name: `foundry-payg-openai`
 
-#### Managed identities
+##### Managed identities
 
 Verify that the managed identity has the "Azure AI User" role assigned.
 

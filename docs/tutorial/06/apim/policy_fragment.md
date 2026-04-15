@@ -1,4 +1,4 @@
-# Policy fragments
+# Re-using policy fragments
 
 In previous steps we learned how to group APIs by policies into products
 
@@ -14,6 +14,8 @@ So far we've limited token usage for AI, but now we want to limit the number of 
 ## APIs
 
 ### Policy fragments
+
+For more information, visit [Reuse policy configurations in your API Management policy definitions](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments)
 
 #### rate-limit
 

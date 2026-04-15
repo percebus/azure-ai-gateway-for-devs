@@ -116,8 +116,9 @@ Now, we can remove that `<llm-token-limit>` policy from the individual APIs, sin
 
 So far we've learned how to apply policies at different scopes:
 
-- At the API level
-- At the product level, which allows us to enforce rules like token quotas across all APIs within a product. This approach simplifies management and ensures consistent behavior for all APIs under the same product.
+- **Global**: APIM in general
+- At the **API** level
+- At the **Product** level, which allows us to enforce rules like token quotas across all APIs within a product. This approach simplifies management and ensures consistent behavior for all APIs under the same product.
 
 These are the scopes a policy can be applied to:
 
@@ -137,7 +138,7 @@ For more information, visit [Policies in Azure API Management](https://learn.mic
 
 ### ai-quota-premium
 
-Bonus excercise: Create another product called `ai-quota-premium` with a higher token quota, for example 10M tokens per day, and apply the same `<llm-token-limit>` policy with the updated quota values.
+Bonus exercise: Create another product called `ai-quota-premium` with a higher token quota, for example 100K tokens per hour, and apply the same `<llm-token-limit>` policy with the updated quota values.
 
 ### MCPs
 
