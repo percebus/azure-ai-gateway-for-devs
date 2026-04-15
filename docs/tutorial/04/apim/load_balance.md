@@ -191,6 +191,9 @@ AZURE_OPENAI__API_KEY="{Subscription Primary key}"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
 ```
 
+> [!IMPORTANT]
+> Yes, the deployment name appears in **both** `ENDPOINT` and `DEPLOYMENT`. The Agent Framework SDK requires the full URL path _and_ the deployment name separately. Replace both `FIXME` placeholders in the URL with the actual deployment name and API version (e.g. `2025-01-01-preview`).
+
 4. Run the `my_agent` app: `python src/my_agent`
 
 ```
