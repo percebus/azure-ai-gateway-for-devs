@@ -1,9 +1,5 @@
 # Azure API Management
 
-Remember when we added MS Foundry using the APIM wizard and it did everything for us?
-
-Well, this time, we'll take it up a notch and manually add configuration.
-
 ## Backends
 
 ### Backend endpoints
