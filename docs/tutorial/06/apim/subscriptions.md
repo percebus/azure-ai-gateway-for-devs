@@ -113,9 +113,8 @@ If you have any questions or need information or code samples related to Microso
 
 You should see an error like
 
-```
-asyncio.exceptions.CancelledError: Cancelled via cancel scope 1dfce89f620
-```
+> [!CAUTION]
+> asyncio.exceptions.CancelledError: Cancelled via cancel scope 1dfce89f620
 
 > [!NOTE]
 > `{username} @ MCPs` is different from `Smoke Test Agent @ MCPs`
