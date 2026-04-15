@@ -54,3 +54,7 @@ Play w/ the following permutations:
 1. `API_KEY`: Change from"Primary key" to "Secondary key"
 1. `DEPLOYMENT`: Change from `-latest` to `-stable`
 1. `api-version`: `2025-01-01-preview`, `2025-03-01-preview`, deployment model's version, etc.
+
+## Next
+
+[Back to Module](./README.md)

@@ -33,3 +33,7 @@ Always tag your resources. Or at the very least the Resource Group.
 ### Review + create
 
 ![Resource Group - Review + Create](../../../assets/img/tutorial/eastus/rg/+/Review.png)
+
+## Next
+
+[Back to Module](./README.md)

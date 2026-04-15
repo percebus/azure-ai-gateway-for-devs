@@ -331,3 +331,7 @@ We'll follow the same process from PTU, but this time
 Verify that the managed identity has the "Azure AI User" role assigned.
 
 ![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_02.png)
+
+## Next
+
+[Back to Module](./README.md)

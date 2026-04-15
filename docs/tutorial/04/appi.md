@@ -46,3 +46,7 @@ For an in depth tutorial on KQL, see [Tutorial: Use Log Analytics](https://learn
 > "I want to query a redirects from an APIM load balancer to the respective backend service URL (foundry instance)"
 
 ![Response](../../../assets/img/tutorial/eastus/appi/Observability_agent/response.png)
+
+## Next
+
+[Back to Module](./README.md)

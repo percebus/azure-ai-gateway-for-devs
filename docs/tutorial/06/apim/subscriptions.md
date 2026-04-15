@@ -159,3 +159,7 @@ In the same [ ... ] menu, you'll find
 As mentioned in the disclaimer, Subscription keys should NEVER be the only method of authentication or authorization.
 
 They should be used ONLY to inform APIM which product the request is associated with, and not as a primary means of securing access.
+
+## Next
+
+[Back to Module](../README.md)

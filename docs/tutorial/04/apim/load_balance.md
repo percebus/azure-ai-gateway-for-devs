@@ -203,3 +203,7 @@ Agent: I have access to tools in the Microsoft functions namespace:
 
 I use these tools to provide accurate and up-to-date information from Microsoft sources. How can I assist you today?
 ```
+
+## Next
+
+[Back to Module](../README.md)

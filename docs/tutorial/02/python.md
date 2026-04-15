@@ -8,3 +8,7 @@ You can start interacting w/ your deployment model using the Python solution inc
 > If you don't have permissions to generate API keys, don't worry! We will login thru APIM in the next module.
 
 ![API key disabled](../../../assets/img/tutorial/eastus/foundry/API_key_disabled.png)
+
+## Next
+
+[Back to Module](./README.md)
