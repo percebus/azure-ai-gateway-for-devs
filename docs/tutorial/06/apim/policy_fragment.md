@@ -44,10 +44,10 @@ For more information, visit [Reuse policy configurations in your API Management 
 </fragment>
 ```
 
-> [!TIP]
+> [!IMPORTANT]
 > Remember, some policies can only be inbound, and some can only be outbound.
 
-> [!WARNING]
+> [!CAUTION]
 > The Policy contains 1 call per 60 seconds.
 > We'll fix it later
 

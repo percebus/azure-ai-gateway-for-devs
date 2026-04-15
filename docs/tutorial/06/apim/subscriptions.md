@@ -9,12 +9,12 @@ For more information, see [How to manage user accounts in Azure API Management](
 ## DISCLAIMER
 
 > [!WARNING]
-> In Microsoft, we're striving for a secret-less approach to managing access, which means reducing the reliance on static API keys and instead using more secure and manageable methods like Azure Managed Identities and OAuth tokens.
+> In Microsoft, we're striving for a secret-less approach to manage access, which means reducing the reliance on static API keys and instead using more secure and manageable methods like Azure Managed Identities and OAuth tokens.
 > Subscription keys should NEVER be used as the only layer of security.
 
 They should be used ONLY to inform APIM which product the request is associated with, and not as a primary means of authentication or authorization.
 
-Its useful to thing of them as kafka consumer group Ids, which sit on Top of w/e security mechanisms you have in place, including
+Its useful to think of them as kafka consumer group Ids, which sit on Top of w/e security mechanisms you have in place, including
 
 - VNets, subnets, private endpoints, etc
 - Azure Managed Identities
@@ -25,6 +25,9 @@ Its useful to thing of them as kafka consumer group Ids, which sit on Top of w/e
 ## Developer portal
 
 ### Users
+
+> [!NOTE]
+> Eventho we're creating a user in the "Developer portal" section, it applies to ALL APIM
 
 #### Smoke Test Agent
 
@@ -40,9 +43,6 @@ Its useful to thing of them as kafka consumer group Ids, which sit on Top of w/e
 
 > [!NOTE]
 > APIM will send an email to the **Smoke Test Agent** with a link to set their password.
-
-> [!NOTE]
-> Eventho we're creating a user in the "Developer portal" section, it applies to ALL APIM
 
 #### Entra
 
@@ -116,7 +116,7 @@ You should see an error like
 > [!CAUTION]
 > asyncio.exceptions.CancelledError: Cancelled via cancel scope 1dfce89f620
 
-> [!NOTE]
+> [!IMPORTANT]
 > `{username} @ MCPs` is different from `Smoke Test Agent @ MCPs`
 > You should still be able to use the MCP from `vscode` regardless
 
