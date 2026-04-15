@@ -91,6 +91,19 @@ Note how it says
 
 ![rate-limit](../../../../assets/img/tutorial/vscode/mcp/rate-limit.png)
 
+If you go to the `OUTPUT` tab, you should see
+
+```
+2026-04-15 10:33:53.038 [info] Connection state: Starting
+2026-04-15 10:33:53.038 [info] Starting server from LocalProcess extension host
+2026-04-15 10:33:53.038 [info] Connection state: Running
+2026-04-15 10:33:53.522 [info] Connection state: Error 429 status sending message to https://ai-gw-jcguerrero-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp: { "statusCode": 429, "message": "Rate limit is exceeded. Try again in 60 seconds." }
+```
+
+> [!CAUTION]
+> Error 429 status sending message to https://ai-gw-jcguerrero-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp:
+> `{ "statusCode": 429, "message": "Rate limit is exceeded. Try again in 60 seconds." }`
+
 #### Fix the policy
 
 1. Update the policy fragment to allow ~~1~~ **3** calls per 60 seconds:
