@@ -13,7 +13,7 @@ We'll add the MS learn MCP server via APIM
   - Name
   - Base path
 
-![mcp-existing-mslearn](../../../../assets/img/tutorial/eastus/apim/MCP_servers/existing/mslearn/Expose.png)
+![mcp-existing-mslearn](../../../../assets/img/tutorial/eastus/apim/MCP_Servers/existing/mslearn/Expose.png)
 
 > [!NOTE]
 > "Expose an API As an MCP Server" allows you to add an existing OpenAPI service (i.e. `api/employees`) and convert each of its methods into MCP endpoints (`POST` > `create_employee`, `GET` > `get_employees`, etc.)
@@ -24,7 +24,7 @@ Note the following:
 
 - The MCP server: `https://ai-gw-{stack-id}-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp`.
 
-![mcp-existing-mslearn](../../../../assets/img/tutorial/eastus/apim/MCP_servers/existing/mslearn/Overview.png)
+![mcp-existing-mslearn](../../../../assets/img/tutorial/eastus/apim/MCP_Servers/existing/mslearn/Overview.png)
 
 ## Visual Studio Code Integration
 
