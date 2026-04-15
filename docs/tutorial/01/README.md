@@ -2,9 +2,9 @@
 
 ## Chapters
 
-- [rg: Resource group](./rg.md)
-- [logging: Logging infrastructure](./logs.md)
-- [foundry: Foundry](./foundry.md)
+1. [Resource group](./rg.md)
+1. [Logging infrastructure](./logs.md)
+1. [Foundry](./foundry.md)
 
 ## Next
 

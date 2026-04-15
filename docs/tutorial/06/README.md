@@ -2,9 +2,9 @@
 
 ## Chapters
 
-- [APIM Products](./apim/products.md)
-- [APIM Subscriptions](./apim/subscriptions.md)
-- [APIM Policy Fragments](./apim/policy_fragment.md)
+1. [APIM Products](./apim/products.md)
+1. [APIM Subscriptions](./apim/subscriptions.md)
+1. [APIM Policy Fragments](./apim/policy_fragment.md)
 
 ## Next
 

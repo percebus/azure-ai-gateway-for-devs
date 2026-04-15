@@ -2,8 +2,8 @@
 
 ## Chapters
 
-- [MCP via APIM](./apim/mcp.md)
-- [Python Smoke testing](./python.md)
+1. [MCP via APIM](./apim/mcp.md)
+1. [Python Smoke testing](./python.md)
 
 ## Next
 

@@ -56,6 +56,8 @@ For foundry, we will create 2 instances.
 
 ## Storage
 
+![Storage](../../../assets/img/tutorial/eastus/foundry/+/Storage.png)
+
 ### Credential storage and application logging
 
 - Application Insights: `ai-gw-{stack-id}-eastus-appi` (created above)

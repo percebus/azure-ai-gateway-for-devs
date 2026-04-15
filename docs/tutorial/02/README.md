@@ -2,8 +2,8 @@
 
 ## Chapters
 
-- [Foundry](./foundry.md)
-- [Python tester](./python.md)
+1. [Foundry](./foundry.md)
+1. [Python tester](./python.md)
 
 ## Next
 
