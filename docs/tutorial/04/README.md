@@ -1,0 +1,10 @@
+# Module 4: APIM Load Balancing + App Insights
+
+## Chapters
+
+1. [Load balancing](./apim/load_balance.md)
+1. [App Insights](./appi.md)
+
+## Next
+
+[Back to Modules](../README.md)

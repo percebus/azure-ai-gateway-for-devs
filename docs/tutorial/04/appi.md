@@ -38,11 +38,65 @@ We can see how `foundry-openai-lb` forwarded to `-ptu`
 
 For an in depth tutorial on KQL, see [Tutorial: Use Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial)
 
+> [!NOTE]
+> APIM sends telemetry to App Insights in two tables:
+>
+> - `requests`: Frontend (client → APIM) entries
+> - `dependencies`: Backend (APIM → Foundry) entries
+>
+> To see load balancer routing, we query `dependencies` for backend calls that contain the foundry backend URL.
+
+#### Load balancing routing (KQL)
+
+1. App Insights > Monitoring > Logs
+1. Paste the following KQL query:
+
+```kql
+// Correlate frontend requests with backend Foundry calls
+requests
+| where timestamp > ago(24h)
+| where name has "chat/completions"
+| project
+    timestamp,
+    operation_Id,
+    frontendUrl = url,
+    httpStatus  = resultCode,
+    frontendDuration = duration
+| join kind=inner (
+    dependencies
+    | where data has "foundry"
+    | project
+        operation_Id,
+        backendUrl = data,
+        backendDuration = duration,
+        backendStatus   = resultCode
+) on operation_Id
+| project
+    timestamp,
+    operation_Id,
+    frontendUrl,
+    backendUrl,
+    httpStatus,
+    frontendDuration,
+    backendDuration
+| order by timestamp desc
+```
+
+This joins frontend requests with their backend dependency calls, so you can see the full client → APIM → Foundry flow. The `backendUrl` column shows whether traffic went to `-ptu` or `-payg`.
+
+![KQL](../../../assets/img/tutorial/eastus/appi/Monitoring/Logs/lb.png)
+
 #### Observability agent
+
+Alternatively, you can use the Observability agent:
 
 1. App Insights > Monitoring > Logs > [ Observability agent ]
 1. Query something like
 
-> "I want to query a redirects from an APIM load balancer to the respective backend service URL (foundry instance)"
+> "I want to query redirects from an APIM load balancer to the respective backend service URL (foundry instance)"
 
 ![Response](../../../assets/img/tutorial/eastus/appi/Observability_agent/response.png)
+
+## Next
+
+[Back to Module](./README.md)

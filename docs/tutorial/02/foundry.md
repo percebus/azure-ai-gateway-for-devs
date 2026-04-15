@@ -113,3 +113,7 @@ On the deployment model, click on the [ Metrics ] tab (Classic), or [ Monitor ] 
 ### PayG
 
 Now, switch to the PayG instance to configure the same deployment models.
+
+## Next
+
+[Back to Module](./README.md)

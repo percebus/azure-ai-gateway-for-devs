@@ -22,3 +22,7 @@ Agent: I have access to the following tools:
 
 I can use these tools to provide you with accurate and detailed information about Microsoft and Azure technologies. How can I assist you today?
 ```
+
+## Next
+
+[Back to Module](./README.md)

@@ -158,7 +158,7 @@ Let's go to
 1. Click on [ Azure role assignments ]. NOTE: This is RBAC
 1. Note that It got connected w/ "Azure AI User"
 
-![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_01.png)
+![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments/01.png)
 
 ##### Settings
 
@@ -330,4 +330,8 @@ We'll follow the same process from PTU, but this time
 
 Verify that the managed identity has the "Azure AI User" role assigned.
 
-![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments_02.png)
+![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments/02.png)
+
+## Next
+
+[Back to Module](./README.md)

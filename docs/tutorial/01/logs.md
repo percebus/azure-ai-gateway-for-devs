@@ -112,3 +112,7 @@ If you only created 1 Log Analytics Workspace, only create 1 App Insights instan
 #### Resource Visualization
 
 ![architecture 03](../../../assets/img/architecture/03_appi_visualizer.png)
+
+## Next
+
+[Back to Module](./README.md)
