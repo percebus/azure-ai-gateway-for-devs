@@ -30,6 +30,10 @@ However, we're just going to benefit that MS Foundry comes "with batteries inclu
 
 And the same for `-eastus2-foundry-payg`
 
+## Build
+
+FIXME create new policy w/ blocks
+
 ## Next
 
 [Back to Module](../README.md)
