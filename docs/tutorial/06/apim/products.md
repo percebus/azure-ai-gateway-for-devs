@@ -23,7 +23,7 @@ For more information, see [Tutorial: Create and publish a product](https://learn
   - Display name: `ai-open`
   - Id: `ai-open`
   - Description: Open access
-  - [x] Published <<< VERY IMPORTANT!
+  - [x] Published
   - [x] Requires subscription
   - APIs:
     - `foundry-ptu-openai`
@@ -44,6 +44,12 @@ For more information, see [Tutorial: Create and publish a product](https://learn
 1. Rename the "Display name" of the subscription to `{username} @ ai-open`
 
 ![Subscriptions](../../../../assets/img/tutorial/eastus/apim/Products/ai-open/Subscriptions/JCGuerrero.png)
+
+##### eMail
+
+You should receive an email notification for the subscription you just added.
+
+![eMail](../../../../assets/img/tutorial/eastus/apim/Products/ai-open/Subscriptions/eMail.png)
 
 ### ai-quota
 
@@ -106,6 +112,24 @@ Apply the same policy, resulting in the following XML:
 
 Now, we can remove that `<llm-token-limit>` policy from the individual APIs, since it's now applied at the product level.
 
+#### Policy scopes
+
+So far we've learned how to apply policies at different scopes:
+
+- At the API level
+- At the product level, which allows us to enforce rules like token quotas across all APIs within a product. This approach simplifies management and ensures consistent behavior for all APIs under the same product.
+
+These are the scopes a policy can be applied to:
+
+- Global: APIM in general
+  - Product
+    - API
+      - Operation (i.e. `GET`, `POST`, etc.)
+
+![Policy Scopes](../../../../assets/img/tutorial/eastus/apim/Policy_scopes.png)
+
+For more information, visit [Policies in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
+
 #### Subscriptions
 
 1. [ + Add subscribers ]
@@ -115,11 +139,34 @@ Now, we can remove that `<llm-token-limit>` policy from the individual APIs, sin
 
 Bonus excercise: Create another product called `ai-quota-premium` with a higher token quota, for example 10M tokens per day, and apply the same `<llm-token-limit>` policy with the updated quota values.
 
+### MCPs
+
+#### Add
+
+Wait, what about the MCPs?
+
+Right, let's also create a product for the MCP(s).
+
+- Display Name: `MCPs`
+- Id: `mcp`
+- Description: `All MCPs`
+- [x] Published: Checked
+- [x] Requires subscription: Checked
+- APIs
+  - `mcp-existing-mslearn`
+
 ## Subscriptions
 
-The list should look something like this:
+Now you should have
 
-![Subscriptions](../../../../assets/img/tutorial/eastus/apim/Subscriptions/list.png)
+- A key for AI
+- A key for MCPs
+
+![Subscriptions](../../../../assets/img/tutorial/eastus/apim/Subscriptions/01.png)
+
+Wait, two keys?
+
+Yes, one for the AI product and one for the MCPs product. Each product has its own subscription key, which allows you to manage access and quotas independently.
 
 ## Testing
 
