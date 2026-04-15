@@ -65,6 +65,20 @@ We have almost everything we need to create an API that uses our load balancer. 
 1. `foundry-ptu-openai` > [ ... ] > Clone
 1. Rename cloned API to `foundry-openai-lb`
 
+### Design
+
+### Inbound processing
+
+Update the `set-backend-service` to point to `foundry-openai-lb` instead:
+
+```xml
+<set-backend-service id="apim-generated-policy" backend-id="foundry-openai-lb" />
+```
+
+### Settings
+
+Update the values to the following:
+
 - Settings: `foundry-openai-lb`
 - API URL suffix: `foundry-openai-lb/openai`
 
