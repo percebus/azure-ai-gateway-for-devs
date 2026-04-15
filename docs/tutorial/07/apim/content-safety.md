@@ -58,7 +58,6 @@ Follow the same steps as above to create a new backend for
 - Backend weight and priority:
   - [x] Send requests evenly
 
-
 ## Policy fragments
 
 We'll create a couple of Policy fragments
@@ -139,3 +138,52 @@ We'll create a couple of Policy fragments
 ```
 
 ## Products
+
+We'll create the following products:
+
+- `ai-relaxed`
+- `ai-strict`
+
+### ai-relaxed
+
+#### Add
+
+Follow the steps you did for `ai-open`
+
+1. APIM > Products
+1. [ + Add ]
+
+  - Display name: `ai-relaxed`
+  - Id: `ai-relaxed`
+  - Description: "AI access with relaxed content safety settings"
+  - [x] Published
+  - [x] Requires subscription
+  - APIs: Select all 3 `foundry-`
+
+#### Policies
+
+Add the `<include-fragment fragment-id="llm-content-safety_relaxed" />` to the inbound policies of the `ai-relaxed` product.
+
+```xml
+<!--
+    - Policies are applied in the order they appear.
+    - Position <base/> inside a section to inherit policies from the outer scope.
+    - Comments within policies are not preserved.
+ -->
+<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
+<policies>
+    <!-- Throttle, authorize, validate, cache, or transform the requests -->
+    <inbound>
+        <base />
+        <include-fragment fragment-id="llm-content-safety_relaxed" />
+    </inbound>
+
+    <!-- ... -->
+</policies>
+```
+
+#### Subscriptions
+
+1. [ + Add subscribers ]
+1. Select both: `{your username}` and `Smoke Test Agent`
+1. Rename policies to `{foo} @ ai-relaxed`

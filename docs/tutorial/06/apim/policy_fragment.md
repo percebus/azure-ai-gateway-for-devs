@@ -59,11 +59,11 @@ Note how it says
 > _Start using policy fragments in your policy documents._
 > `<include-fragment fragment-id="subscription_rate-limit_60s_3x" />`
 
-##### MCP Servers
+##### Products
 
-1. APIM > APIs > MCP Servers
-1. Go to `mcp-existing-mslearn`
-1. [ > MCP ] > Policies
+1. APIM > Products > MCPs
+1. Select "MCPs"
+1. [ v Product ] > Policies
 1. Add the following in inbound
 
 ```xml
@@ -76,6 +76,25 @@ Note how it says
   <!-- ... -->
 </policies>
 ```
+
+##### Policy scopes
+
+So far we've learned how to apply policies at different scopes:
+
+- **Global**: APIM in general
+- At the **API** level
+- At the **Product** level, which allows us to enforce rules like token quotas across all APIs within a product. This approach simplifies management and ensures consistent behavior for all APIs under the same product.
+
+These are the scopes a policy can be applied to:
+
+- Global: APIM in general
+  - Product
+    - API
+      - Operation (i.e. `GET`, `POST`, etc.)
+
+![Policy Scopes](../../../../assets/img/tutorial/eastus/apim/Policy_scopes.png)
+
+For more information, visit [Policies in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
 
 ##### Test the policy fragment in VS Code
 
