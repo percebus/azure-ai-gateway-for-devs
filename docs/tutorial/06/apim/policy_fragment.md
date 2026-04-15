@@ -6,8 +6,8 @@ There is another way to create reusable policy logic called **policy fragments**
 
 Imagine a feature request:
 
-> *"As a manager, I want to limit MCP calls to 3 per minute per user/system,*
-> *so that they do not overwhelm the backend system."*
+> _"As a manager, I want to limit MCP calls to 3 per minute per user/system,_
+> _so that they do not overwhelm the backend system."_
 
 So far we've limited token usage for AI, but now we want to limit the number of API calls per application per minute. This is where policy fragments come in handy.
 
@@ -24,8 +24,8 @@ For more information, visit [Reuse policy configurations in your API Management 
 1. APIM > APIs > Policy fragments
 1. [ + Create ]
 
-  - Name: `subscription_rate-limit_60s_3x`
-  - XML policy fragment:
+- Name: `subscription_rate-limit_60s_3x`
+- XML policy fragment:
 
 ```xml
 <!--
@@ -56,7 +56,7 @@ For more information, visit [Reuse policy configurations in your API Management 
 Note how it says
 
 > **Next steps**
-> *Start using policy fragments in your policy documents.*
+> _Start using policy fragments in your policy documents._
 > `<include-fragment fragment-id="subscription_rate-limit_60s_3x" />`
 
 ##### MCP Servers
@@ -86,8 +86,8 @@ Note how it says
 2. Open 2 side-by-side Copilot chat windows
 1. In each window, make API calls to the `mcp-existing-mslearn` API and observe the rate limiting behavior.
 
-  - Give me mslearn docs for python
-  - Give me mslearn docs for Java
+- Give me mslearn docs for python
+- Give me mslearn docs for Java
 
 ![rate-limit](../../../../assets/img/tutorial/vscode/mcp/rate-limit.png)
 
@@ -116,8 +116,9 @@ Oh sweet, so we can also move the `llm-token-limit` to a policy fragment, right?
 Try it:
 
 1. APIM > APIs > Policy fragments
-  - Name: `subscription_llm-token-limit_1Kpm_10Kph`
-  - XML policy fragment:
+
+- Name: `subscription_llm-token-limit_1Kpm_10Kph`
+- XML policy fragment:
 
 ```xml
 <llm-token-limit

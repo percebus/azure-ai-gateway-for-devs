@@ -31,10 +31,10 @@ Its useful to thing of them as kafka consumer group Ids, which sit on Top of w/e
 1. APIM > Developer portal > Users
 1. [ + Add ]
 
-  - First name: `Smoke Test`
-  - Last name: `Agent`
-  - Email: `smoketest@bananas.com` <<< NOTE!
-  - Password: Something like `ChangeMe!123`
+- First name: `Smoke Test`
+- Last name: `Agent`
+- Email: `smoketest@bananas.com` <<< NOTE!
+- Password: Something like `ChangeMe!123`
 
 ![Smoke Test Agent](../../../../assets/img/tutorial/eastus/apim/Users/+/Smoke_Test_Agent.png)
 
@@ -105,8 +105,8 @@ If you have any questions or need information or code samples related to Microso
 1. Click on the [ ... ] button
 1. Click "Suspend subscription" to disable access
 
-  - **State comment**: "Something is fishy"
-  - **Send notificaion for**: 'Do not send'
+- **State comment**: "Something is fishy"
+- **Send notificaion for**: 'Do not send'
 
 5. Count 10 Missisipis
 1. Run the test again
@@ -131,8 +131,8 @@ We'll do the same, but now for the `ai-quota` product.
 1. Enable both accesses again
 1. [ ... ] > "Activate subscription"
 
-  - **State comment**: "False alarm"
-  - **Send notification for**: 'Do not send'
+- **State comment**: "False alarm"
+- **Send notification for**: 'Do not send'
 
 3. Run the test again
 
@@ -153,8 +153,8 @@ Imagine that you [accidentally git-tracked a subscription key](https://github.co
 
 In the same [ ... ] menu, you'll find
 
-- *Regenerate primary key*
-- *Regenerate secondary key*
+- _Regenerate primary key_
+- _Regenerate secondary key_
 
 As mentioned in the disclaimer, Subscription keys should NEVER be the only method of authentication or authorization.
 

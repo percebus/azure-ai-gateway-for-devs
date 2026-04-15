@@ -20,15 +20,15 @@ For more information, see [Tutorial: Create and publish a product](https://learn
 1. APIM > APIs > Products
 1. [ + Add ]
 
-  - Display name: `ai-open`
-  - Id: `ai-open`
-  - Description: Open access
-  - [x] Published
-  - [x] Requires subscription
-  - APIs:
-    - `foundry-ptu-openai`
-    - `foundry-payg-openai`
-    - `foundry-openai-lb`
+- Display name: `ai-open`
+- Id: `ai-open`
+- Description: Open access
+- [x] Published
+- [x] Requires subscription
+- APIs:
+  - `foundry-ptu-openai`
+  - `foundry-payg-openai`
+  - `foundry-openai-lb`
 
 ![ai-open](../../../../assets/img/tutorial/eastus/apim/Products/ai-open/+/Add.png)
 
@@ -70,7 +70,7 @@ Remember that policy to apply a quota limit?
 We'll follow the same steps above, then
 
 1. Click on the product
-2. v Product  > Policies
+2. v Product > Policies
 
 Apply the same policy, resulting in the following XML:
 

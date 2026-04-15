@@ -64,9 +64,9 @@ For this section, we will be following the steps from this other tutorial: [Secu
 1. Click on `mcp-existing-mslearn`
 1. [ MCP v ] > Settings
 
-  - [x] Subscription required
-    - **Header name**: `Ocp-Apim-Subscription-Key` (as-is)
-    - **Query name**: Leave empty.
+- [x] Subscription required
+  - **Header name**: `Ocp-Apim-Subscription-Key` (as-is)
+  - **Query name**: Leave empty.
 
 4. Wait 10 Missisipis (APIM sometime takes a few seconds to apply the changes).
 1. Restart MCP in the `.vscode/mcp.json` file.

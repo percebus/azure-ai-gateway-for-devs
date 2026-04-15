@@ -77,6 +77,8 @@ Update the `set-backend-service` to point to `foundry-openai-lb` instead:
 
 ### Settings
 
+Update the values to the following:
+
 - Settings: `foundry-openai-lb`
 - API URL suffix: `foundry-openai-lb/openai`
 
