@@ -7,7 +7,7 @@ In this case,
 - We'll pretend that `foundry-ptu` is where we have paid-token-usage for all deployment models.
 - And `foundry-payg` is where we have pay-as-you-go usage for all deployment models.
 
-We want to create a load balancer that prioritizes `foundry-ptu`, but fallsback on `foundry-payg` if the `foundry-ptu` backend is unavailable or the subscription type is pay-as-you-go.
+We want to create a load balancer that prioritizes `foundry-ptu`, but falls back on `foundry-payg` if the `foundry-ptu` backend is unavailable or the subscription type is pay-as-you-go.
 
 ## Load balancer pool
 
@@ -191,7 +191,7 @@ AZURE_OPENAI__API_KEY="{Subscription Primary key}"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
 ```
 
-4. Run the `my_agent` app: `python src/my_agent.py`
+4. Run the `my_agent` app: `python src/my_agent`
 
 ```
 User: What tools are available to you?

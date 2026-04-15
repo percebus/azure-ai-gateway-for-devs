@@ -5,9 +5,9 @@
 | Resource                | Primary                     | Secondary                    |
 | ----------------------- | --------------------------- | ---------------------------- |
 | Region                  | `eastus`                    | `eastus2`                    |
-| Log Analytics Workspace | `-eastus-law`               | -`eastus2-law`               |
-| App Insights            | `-eastus-appi`              | -`eastus2-appi`              |
-| Foundry Instances       | `-eastus-foundry-{purpose}` | -`eastus2-foundry-{purpose}` |
+| Log Analytics Workspace | `-eastus-law`               | `-eastus2-law`               |
+| App Insights            | `-eastus-appi`              | `-eastus2-appi`              |
+| Foundry Instances       | `-eastus-foundry-{purpose}` | `-eastus2-foundry-{purpose}` |
 
 ![MS Foundry](../../../assets/img/buttons/foundry.png)
 
@@ -33,7 +33,7 @@ For foundry, we will create 2 instances.
       <td>
         <ul>
             <li>Name: <pre>ai-gw-{stack-id}-eastus-foundry-ptu</pre></li>
-            <li>Region: <pre>(US) East US`.- `eastus`</pre></li>
+            <li>Region: <pre>(US) East US - eastus</pre></li>
             <li>Default project name: <pre>ai-gw-{stack-id}-eastus-foundry-ptu-proj</pre></li>
             <li>Application Insights: <pre>ai-gw-{stack-id}-eastus-appi</pre> (created above)</li>
         </ul>
@@ -41,7 +41,7 @@ For foundry, we will create 2 instances.
       <td>
         <ul>
             <li>Name: <pre>ai-gw-{stack-id}-eastus2-foundry-payg</pre></li>
-            <li>Region: <pre>(US) East US 2`.- `eastus2`</pre></li>
+            <li>Region: <pre>(US) East US 2 - eastus2</pre></li>
             <li>Default project name: <pre>ai-gw-{stack-id}-eastus2-foundry-payg-proj</pre></li>
             <li>Application Insights: <pre>ai-gw-{stack-id}-eastus2-appi</pre> (created above)</li>
         </ul>

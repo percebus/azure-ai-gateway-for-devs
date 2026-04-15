@@ -68,9 +68,9 @@ For this section, we will be following the steps from this other tutorial: [Secu
   - **Header name**: `Ocp-Apim-Subscription-Key` (as-is)
   - **Query name**: Leave empty.
 
-4. Wait 10 Missisipis (APIM sometime takes a few seconds to apply the changes).
+4. Wait 10 Mississippis (APIM sometime takes a few seconds to apply the changes).
 1. Restart MCP in the `.vscode/mcp.json` file.
-1. You should a similar following error: ![Error](../../../../assets/img/tutorial/vscode/mcp/Error.png)
+1. You should see a similar error: ![Error](../../../../assets/img/tutorial/vscode/mcp/Error.png)
 1. Remember that subscription from [python/.env](../../../../python/.env.example) ? Copy it to `.vscode/mcp.json` under the `servers` section for the `apim-mslearn` server:
 
 ```json

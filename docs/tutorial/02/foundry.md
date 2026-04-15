@@ -42,7 +42,7 @@ At the end, we will have the following deployment models configured:
 
 ### PTU
 
-For this excercise, we will be using the "New Foundry" view.
+For this exercise, we will be using the "New Foundry" view.
 
 > [!NOTE]
 > Be sure to go back and forth between the "New" and "Classic" Foundry views to familiarize yourself with both.
@@ -72,7 +72,7 @@ We'll be creating the following deployment models in the PTU instance.-
 - **Guardrails**: `DefaultV2`
 
 > [!WARNING]
-> Tokens per minute is shared across ALL GPT deployments. If you choose a hight value, you won't be able to create subsequent deployment models.
+> Tokens per minute is shared across ALL GPT deployments. If you choose a high value, you won't be able to create subsequent deployment models.
 
 #### gpt-4.1-mini-global-standard-stable
 

@@ -34,7 +34,7 @@ AZURE_OPENAI__API_KEY="{Subscription Primary key}"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
 ```
 
-4. Run the `my_agent` app: `python src/my_agent.py`
+4. Run the `my_agent` app: `python src/my_agent`
 
 ```
 User: What tools are available to you?

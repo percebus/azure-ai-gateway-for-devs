@@ -4,7 +4,7 @@
 
 We'll create an instance in the primary region `eastus`
 
-Bear in mind that APIM can span accross multiple regions for high availability and disaster recovery purposes.
+Bear in mind that APIM can span across multiple regions for high availability and disaster recovery purposes.
 
 > [!WARNING]
 > We'll work w/ v2 tiers. You CANNOT change from v1 (Like "Developer" or "Basic") to v2.
@@ -27,7 +27,7 @@ Bear in mind that APIM can span accross multiple regions for high availability a
 - Pricing tier: `Basic v2`.
 
 > [!WARNING]
-> APIM Can be EXPENSIVE. Even the Basic v2 tier can incur into $500/mo
+> APIM Can be EXPENSIVE. Even the Basic v2 tier can cost up to $500/mo
 
 - Unit(s): 1
 

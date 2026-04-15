@@ -14,7 +14,7 @@ For more information, see [How to manage user accounts in Azure API Management](
 
 They should be used ONLY to inform APIM which product the request is associated with, and not as a primary means of authentication or authorization.
 
-Its useful to think of them as kafka consumer group Ids, which sit on Top of w/e security mechanisms you have in place, including
+It's useful to think of them as kafka consumer group Ids, which sit on Top of w/e security mechanisms you have in place, including
 
 - VNets, subnets, private endpoints, etc
 - Azure Managed Identities
@@ -27,7 +27,7 @@ Its useful to think of them as kafka consumer group Ids, which sit on Top of w/e
 ### Users
 
 > [!NOTE]
-> Eventho we're creating a user in the "Developer portal" section, it applies to ALL APIM
+> Even though we're creating a user in the "Developer portal" section, it applies to ALL APIM
 
 #### Smoke Test Agent
 
@@ -106,9 +106,9 @@ If you have any questions or need information or code samples related to Microso
 1. Click "Suspend subscription" to disable access
 
 - **State comment**: "Something is fishy"
-- **Send notificaion for**: 'Do not send'
+- **Send notification for**: 'Do not send'
 
-5. Count 10 Missisipis
+5. Count 10 Mississippis
 1. Run the test again
 
 You should see an error like
@@ -124,7 +124,7 @@ You should see an error like
 
 We'll do the same, but now for the `ai-quota` product.
 
-1. Count 10 Missisipis
+1. Count 10 Mississippis
 
 #### Enable access again
 

@@ -136,7 +136,7 @@ Inside, you'll see
 ```
 
 > [!IMPORTANT]
-> Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />
+> Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />`
 
 ##### Backends
 

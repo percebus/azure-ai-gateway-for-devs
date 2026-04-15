@@ -150,8 +150,6 @@ But you get
 > Error in element 'llm-token-limit' on line 8, column 6:
 > The 'remaining-quota-tokens-header-name' attribute is unavailable for websocket APIs and global/product policies.
 
-What this is saying is basically that Policy fragments have to be Universal for ALL protocols, not JUST HTTP(S).
-
-Since this is an HTTP specific, it cannot be used in a policy fragment that is intended to be universal across all protocols.
+What this is saying is that certain `llm-token-limit` attributes (like `remaining-quota-tokens-header-name`) are HTTP-specific and unavailable for websocket APIs and global/product-scoped policy fragments. Since policy fragments must be compatible across all protocols including websockets, HTTP-header-specific attributes can't be used within them.
 
 Alas, a Product is our only option
