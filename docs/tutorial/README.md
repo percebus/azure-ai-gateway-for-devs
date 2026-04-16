@@ -9,7 +9,7 @@ This guide follows loosely the recommended abbreviations.
 
 With some exceptions for clarity: i.e. `-foundry-` instead of `aif`, which in my brain sounds like "As-if"
 
-![Clueless](../../assets/img/memes/as-ifpng)
+![Clueless](../../assets/img/memes/as-if.png)
 
 ### About links
 
