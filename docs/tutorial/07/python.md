@@ -49,10 +49,40 @@ Now, let's test it!
 1. Run it against `ai-open`
    1. Make sure everything is still working as expected
 
+```
+2026-04-16 10:53:19,723 - agent - DEBUG - Setting up 'Ocp-Apim-Subscription-Key'
+User: What tools are available to you?
+Agent: I have access to the following tools:
+
+1. microsoft_docs_search: To search official Microsoft/Azure documentation for relevant content based on queries.
+2. microsoft_code_sample_search: To find code snippets and examples in official Microsoft documentation for specific Microsoft/Azure related coding tasks.
+3. microsoft_docs_fetch: To fetch and convert a Microsoft Learn documentation webpage to markdown format for complete detailed information.
+
+These tools help me provide accurate, trustworthy, and comprehensive answers related to Microsoft and Azure technologies.
+```
+
+
 ## ai-relaxed
 
 1. Then, comment out the `ai-open` key, and use the `ai-relaxed` subscription key to test the relaxed content safety settings.
    1. It should still work as expected
+
+```
+2026-04-16 10:37:03,399 - agent - DEBUG - Setting up 'Ocp-Apim-Subscription-Key'
+2026-04-16 10:37:03,401 - agent - DEBUG - Setting up 'Ocp-Apim-Subscription-Key'
+User: What tools are available to you?
+Agent: I have access to the following tools within the functions namespace:
+
+1. microsoft_docs_search: Search official Microsoft/Azure documentation to find relevant and trustworthy content related to a user's query. It returns high-quality content chunks from Microsoft Learn and other official sources.
+
+2. microsoft_code_sample_search: Search for code snippets and examples in official Microsoft Learn documentation. It helps find practical implementation examples and best practices for Microsoft/Azure products and services in multiple programming languages.
+
+3. microsoft_docs_fetch: Fetch and convert a Microsoft Learn documentation webpage to markdown format. This tool retrieves the complete and latest content of Microsoft documentation webpages including step-by-step procedures, troubleshooting sections, prerequisites, detailed explanations, and more.
+
+Additionally, I can use a multi-tool function to run multiple of these tools in parallel if needed.
+
+How can I assist you further using these tools?
+```
 
 ## ai-strict
 
@@ -66,4 +96,4 @@ However, we'll use this to our advantage to prove that the strict content safety
 > [!CAUTION]
 > agent_framework.exceptions.ServiceResponseException:
 > <class 'agent_framework.azure.\_chat_client.AzureOpenAIChatClient'> service failed to complete the prompt: Error code: 403 -
-> `{'statusCode': 403, 'message': 'Request failed content safety check.'}`
+> `{'statusCode': 403, 'message': 'Request failed content safety chec
