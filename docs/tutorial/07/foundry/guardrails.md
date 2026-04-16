@@ -2,7 +2,7 @@
 
 ## -eastus-foundry-ptu
 
-Because we want to move content-safety checks from LLM deployments to APIM, we'll create a log-only guardrail policies.
+Because we want to move content-safety checks from LLM deployments to APIM, we'll create as close to annotate-only guardrail policies as possible.
 
 ### Blocklists
 
@@ -13,13 +13,13 @@ We'll create a block list to disallow the word "apple"
 1. Build > Guardrails > Blocklists
 1. ( Create )
 
-- Name: bananas
+- **Name**: bananas
 - Add terms manually
 
 | term        | type        |
 | ----------- | ----------- |
-| banana      | Exact match |
-| [bB]ananas? | Regex       |
+| `banana`      | Exact match |
+| `[bB]ananas?` | Regex       |
 
 ![no bananas](../../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Guardrails/Blocklists/bananas/+/bananas.png)
 
@@ -105,7 +105,7 @@ The following are currently not supported in APIM (at least not out of the box) 
 
 Select both deployment models
 
-![Select agents and models](../../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Guardrails/controls/Basic/+/Models.png)
+![Select agents and models](../../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Guardrails/policies/Basic/+/Models.png)
 
 ## -eastus2-foundry-payg
 

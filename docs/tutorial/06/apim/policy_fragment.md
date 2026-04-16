@@ -96,6 +96,11 @@ These are the scopes a policy can be applied to:
 
 For more information, visit [Policies in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
 
+> [!NOTE]
+> `<base />` always goes on top!
+> Its APIM's way to say "and enforce higher level policies (Product/Global)
+
+
 ##### Test the policy fragment in VS Code
 
 1. Ensure only the `apim-mslearn` MCP is enabled

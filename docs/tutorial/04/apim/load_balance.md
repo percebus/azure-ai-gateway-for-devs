@@ -186,15 +186,15 @@ And also using our `python` client.
 
 ```
 # openai via APIM
-AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/FIXME/chat/completions?api-version=FIXME"
-AZURE_OPENAI__API_KEY="{Subscription Primary key}"
+AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
+AZURE_OPENAI__API_KEY="{Subscription Primary key}"
 ```
 
 > [!IMPORTANT]
 > Yes, the deployment name appears in **both** `ENDPOINT` and `DEPLOYMENT`. The Agent Framework SDK requires the full URL path _and_ the deployment name separately. Replace both `FIXME` placeholders in the URL with the actual deployment name and API version (e.g. `2025-01-01-preview`).
 
-4. Run the `my_agent` app: `python src/my_agent`
+1. Run the `my_agent` app: `python src/my_agent`
 
 ```
 User: What tools are available to you?

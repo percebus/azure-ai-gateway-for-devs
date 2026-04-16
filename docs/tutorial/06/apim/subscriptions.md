@@ -72,8 +72,8 @@ Mine ended up looking like this:
 ```
 # openai via APIM
 AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"
-AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-open}"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
+AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-open}"
 
 # MCP via APIM
 APIM_MCP__URL="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp"

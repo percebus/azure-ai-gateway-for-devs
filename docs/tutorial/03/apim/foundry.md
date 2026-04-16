@@ -138,6 +138,11 @@ Inside, you'll see
 > [!IMPORTANT]
 > Note this bit: `<set-backend-service id="apim-generated-policy" backend-id="foundry-ptu-openai-ai-endpoint" />`
 
+> [!NOTE]
+> `<base />` always goes on top!
+> Its APIM's way to say "and enforce higher level policies (Product/Global)
+> We'll cover that in a future module
+
 ##### Backends
 
 1. Go to APIs > Backends. and find the backend with the ID `foundry-ptu-openai-ai-endpoint`. This is the backend service that the APIM policy is routing requests to.

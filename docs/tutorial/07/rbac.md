@@ -1,6 +1,6 @@
 # APIM to Foundry RBAC
 
-Before we begin, we need to do this. Unfortunately, this step needs to be done manually using az cli.
+Before we begin, we need to do this. Unfortunately, (to my knowledge) this step needs to be done manually using az cli.
 
 ## Security
 

@@ -9,7 +9,7 @@ It's the same Content-safety that each Deployment Model Guardrails policy uses t
 However, we're just going to benefit that MS Foundry comes "with batteries included"
 
 1. Foundry > Portal
-1. For this, ensure you're using Classic view
+1. For this, ensure you're using **Classic view**
 
 > [!NOTE]
 > There must be a way to do this in the **New experience** as well
@@ -29,10 +29,6 @@ However, we're just going to benefit that MS Foundry comes "with batteries inclu
 `https://ai-gw-{stack-id}-eastus-foundry-ptu.cognitiveservices.azure.com/`
 
 And the same for `-eastus2-foundry-payg`
-
-## Build
-
-FIXME create new policy w/ blocks
 
 ## Next
 
