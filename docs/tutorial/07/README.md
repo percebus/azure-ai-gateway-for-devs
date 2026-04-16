@@ -30,8 +30,10 @@ Well, this time, we'll take it up a notch and manually add configuration.
    1. [Foundry Guardrails & Blocklists](./foundry/guardrails.md)
    1. [Cognitive Services @ Foundry](./foundry/cognitiveservices.md)
 1. APIM
-   1. [Content-Safety @ APIM](./apim/content-safety.md)
-   1. [Test with python](./python.md)
+   1. [CognitiveServices Load Balancer](./apim/load_balance.md)
+   1. [Test blocklist in API](./apim/blocklists.md)
+   1. [Products w/ different Content-Safety profiles](./apim/products.md)
+1. [Test with python](./python.md)
 
 ## Next
 
