@@ -99,7 +99,7 @@ We will follow the same steps as above, but with a different model version upgra
 1. Go to Model > Playground
 1. Type "Hi" and click "Send" (paper plane)
 
-![Playground](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Playground.png)
+![Playground](../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Models/Playground.png)
 
 #### Monitor / metrics
 
@@ -107,8 +107,8 @@ On the deployment model, click on the [ Metrics ] tab (Classic), or [ Monitor ] 
 
 | mode        | img                                                                                                                                     |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
-| New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
+| Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
+| New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
 
 ### PayG
 
