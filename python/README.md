@@ -1,9 +1,16 @@
 # python AI smoke tester
 
+The app is a simple "what tools do you have?" tester for the AI agent.
+
+Is pre-configured w/ mslearn docs. But it should work w/ any MCP either directly or via APIM
+
 ## Pre-requisites
 
-1. `uv`
+1. [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
 1. Azure account
+   1. Foundry
+      1. Access to said foundry
+      1. At least 1 LLM deployment model
 
 ## Setup
 
@@ -14,7 +21,7 @@
 ### .env
 
 1. Copy+paste `.env.example` to `.env`
-2. Fill in the required environment variables.
+1. Fill in the required environment variables.
 
 ### login to Azure
 

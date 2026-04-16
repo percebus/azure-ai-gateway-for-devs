@@ -14,7 +14,7 @@ What if we want to apply a policy that applies to EACH AND EVERY API (no excepti
 
 Which will create `append` the following headers to all output
 
-```
+```xml
 <!--
     IMPORTANT:
     - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
@@ -213,7 +213,7 @@ We'll test w/ the following endpoint:
 
 Replies w/ something like this
 
-**HTTP Respose**
+**HTTP Response**
 
 **Message**
 
@@ -339,4 +339,4 @@ Verify that the managed identity has the "Azure AI User" role assigned.
 
 ## Next
 
-[Back to Module](./README.md)
+[Back to Module](../README.md)

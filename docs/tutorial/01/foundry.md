@@ -77,6 +77,9 @@ Leave as-is
 
 ![Identity](../../../assets/img/tutorial/eastus/foundry/+/Identity.png)
 
+> [!IMPORTANT]
+> **System assigned** identity will play a huge part in this tutorial
+
 ## Encryption
 
 Leave as-is

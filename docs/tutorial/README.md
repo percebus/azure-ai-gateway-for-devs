@@ -1,5 +1,16 @@
 # AI Gateway for Developers Tutorial
 
+## Before you begin
+
+This guide follows loosely the recommended abbreviations.
+
+- [Abbreviation recommendations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
+- [The Azure Periodic Table](https://www.azureperiodictable.com/)
+
+With some exceptions for clarity: i.e. `-foundry-` instead of `aif`, which in my brain sounds like "As-if"
+
+![Clueless](../../assets/img/memes/as-if.png)
+
 ## Modules
 
 1. [Foundry & logging infrastructure](./01/README.md)
@@ -10,9 +21,15 @@
 1. [APIM Users, Products, Subscriptions & Policy Fragments](./06/README.md)
 1. [Content-Safety](./07/README.md)
 
+## Architecture
+
+![Architecture](../../assets/drawio/architecture-final.drawio.svg)
+
 ## Resources
 
-- [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)
+### Tech Community
+
+- [Spotlighting (cross-prompt injection attack detection)](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/better-detecting-cross-prompt-injection-attacks-introducing-spotlighting-in-azur/4458404)
 
 ### MS Learn
 
@@ -21,5 +38,15 @@
 - [Reuse policy configurations in your API Management policy definitions](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments)
 - [Tutorial: Create and publish a product](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-add-products?tabs=azure-portal&pivots=interactive)
 - [Policies in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
+- [Limit call rate by subscription](https://learn.microsoft.com/en-us/azure/api-management/rate-limit-policy)
+- [Enforce content safety checks on LLM requests](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy)
 - [How to manage user accounts in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-or-invite-developers)
 - [Authorize developer accounts by using Microsoft Entra ID in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad)
+- [Harm categories and severity levels in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-severity-levels?tabs=warning)
+- [Prompt Shields in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-prompt-shields)
+- [Protected material detection filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-protected-material?tabs=text)
+- [Personally Identifiable Information (PII) filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-personal-information)
+
+### Related trainings
+
+- [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)

@@ -33,11 +33,10 @@ It's useful to think of them as kafka consumer group Ids, which sit on Top of w/
 
 1. APIM > Developer portal > Users
 1. [ + Add ]
-
-- First name: `Smoke Test`
-- Last name: `Agent`
-- Email: `smoketest@bananas.com` <<< NOTE!
-- Password: Something like `ChangeMe!123`
+   - First name: `Smoke Test`
+   - Last name: `Agent`
+   - Email: `smoketest@bananas.com` <<< NOTE!
+   - Password: Something like `ChangeMe!123`
 
 ![Smoke Test Agent](../../../../assets/img/tutorial/eastus/apim/Users/+/Smoke_Test_Agent.png)
 
@@ -126,10 +125,11 @@ You should see an error like
 We'll do the same, but now for the `ai-open` product.
 
 1. Count 10 Mississippis
+1. Test again (still fails, similar errors)
 
 #### Enable access again
 
-1. Enable both accesses again
+1. Enable **both** accesses again
 1. [ ... ] > "Activate subscription"
 
 - **State comment**: "False alarm"

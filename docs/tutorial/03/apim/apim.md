@@ -56,7 +56,7 @@ Leave as-is
 
 ### Managed identity
 
-#### System assigned managed identiy
+#### System assigned managed identity
 
 - [x] Status: Enabled
 
@@ -88,4 +88,4 @@ Familiarize yourself w/ APIM by exploring the APIs section, where you can create
 
 ## Next
 
-[Back to Modules](../README.md)
+[Back to Module](../README.md)
