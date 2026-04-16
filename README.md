@@ -9,7 +9,7 @@ Using Azure Foundry + API Management, you will be building the following.
 > [!TIP]
 > If you can click, you can learn!
 
-You don't need to be a SWE, not savvy in python.
+You don't need to be a SWE, nor savvy in python.
 
 This tutorial is meant for EVERYONE, including BPMs, TPMs, managers, etc.
 
