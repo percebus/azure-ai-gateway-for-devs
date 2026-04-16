@@ -24,8 +24,8 @@ If ANYTHING is missing, you will ALWAYS get the following.-
 
 ```json
 {
-    "statusCode": 403,
-    "message": "Request failed content safety check."
+  "statusCode": 403,
+  "message": "Request failed content safety check."
 }
 ```
 
@@ -35,7 +35,7 @@ Which is SUPER misleading (I would expect a 500 error of sorts).
 
 So far we've accomplished the following:
 
-- [x] Add APIM-to-Foundries *"Cognitive Services"* **Managed Identity** Role Assignments
+- [x] Add APIM-to-Foundries _"Cognitive Services"_ **Managed Identity** Role Assignments
 - [x] Connect APIM backends to both CognitiveServices APIs in their respective Foundries.
 - [x] Make sure it uses System Managed Identity against `https://cognitiveservices.azure.com/`
 - [x] Create a Load Balancer for the Cognitive Services backends
@@ -47,12 +47,12 @@ Now, let's test it!
 ## ai-open
 
 1. Run it against `ai-open`
-  1. Make sure everything is still working as expected
+1. Make sure everything is still working as expected
 
 ## ai-relaxed
 
 1. Then, comment out that key, and use the `ai-relaxed` subscription key to test the relaxed content safety settings.
-  1. It should still work as expected
+1. It should still work as expected
 
 ## ai-strict
 
@@ -62,5 +62,5 @@ However, we'll use this to our advantage to prove that the strict content safety
 
 > [!CAUTION]
 > agent_framework.exceptions.ServiceResponseException:
-> <class 'agent_framework.azure._chat_client.AzureOpenAIChatClient'> service failed to complete the prompt: Error code: 403 -
+> <class 'agent_framework.azure.\_chat_client.AzureOpenAIChatClient'> service failed to complete the prompt: Error code: 403 -
 > `{'statusCode': 403, 'message': 'Request failed content safety check.'}`

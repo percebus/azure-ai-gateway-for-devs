@@ -25,11 +25,13 @@ Well, this time, we'll take it up a notch and manually add configuration.
 
 ## Chapters
 
-1. [APIM to Foundryb RBAC permissions](./rbac.md)
-1. [Foundry Guardrails & Blocklists](./foundry/guardrails.md)
-1. [Cognitive Services @ Foundry](./foundry/cognitiveservices.md)
-1. [Content-Safety @ APIM](./apim/content-safety.md)
-1. [Test with python](./python.md)
+1. [APIM to Foundry RBAC permissions](./rbac.md)
+1. Foundry
+   1. [Foundry Guardrails & Blocklists](./foundry/guardrails.md)
+   1. [Cognitive Services @ Foundry](./foundry/cognitiveservices.md)
+1. APIM
+   1. [Content-Safety @ APIM](./apim/content-safety.md)
+   1. [Test with python](./python.md)
 
 ## Next
 

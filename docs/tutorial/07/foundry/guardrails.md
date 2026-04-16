@@ -16,8 +16,8 @@ We'll create a block list to disallow the word "apple"
 - **Name**: bananas
 - Add terms manually
 
-| term        | type        |
-| ----------- | ----------- |
+| term          | type        |
+| ------------- | ----------- |
 | `banana`      | Exact match |
 | `[bB]ananas?` | Regex       |
 

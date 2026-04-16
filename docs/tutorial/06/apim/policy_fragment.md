@@ -100,7 +100,6 @@ For more information, visit [Policies in Azure API Management](https://learn.mic
 > `<base />` always goes on top!
 > Its APIM's way to say "and enforce higher level policies (Product/Global)
 
-
 ##### Test the policy fragment in VS Code
 
 1. Ensure only the `apim-mslearn` MCP is enabled

@@ -2,8 +2,9 @@
 
 ## Chapters
 
-1. [Load balancing](./apim/load_balance.md)
-1. [App Insights](./appi.md)
+1. APIM
+    1. [Load balancing](./apim/load_balance.md)
+    1. [App Insights](./appi.md)
 
 ## Next
 

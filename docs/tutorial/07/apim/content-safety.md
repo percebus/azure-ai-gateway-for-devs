@@ -58,13 +58,12 @@ Follow the same steps as above to create a new backend for
 
 So far we've accomplished the following:
 
-- [x] Add APIM-to-Foundries *"Cognitive Services"* **Managed Identity** Role Assignments
+- [x] Add APIM-to-Foundries _"Cognitive Services"_ **Managed Identity** Role Assignments
 - [x] Connect APIM backends to both CognitiveServices APIs in their respective Foundries.
 - [x] Make sure it uses System Managed Identity against `https://cognitiveservices.azure.com/`
 - [x] Create a Load Balancer for the Cognitive Services backends
 - [ ] Created reusable Policy fragments
 - [ ] Created new Products that use those policies
-
 
 Now, let's test it!
 
@@ -115,11 +114,11 @@ Resulting in
 
 ```json
 {
-    "max_tokens":50,
-    "messages":[
-        {"role":"system","content":"You are a helpful assistant"},
-        {"role":"user","content":"Can I get an apple?"}
-    ]
+  "max_tokens": 50,
+  "messages": [
+    { "role": "system", "content": "You are a helpful assistant" },
+    { "role": "user", "content": "Can I get an apple?" }
+  ]
 }
 ```
 
@@ -145,8 +144,8 @@ If ANYTHING is missing, you will ALWAYS get the following.-
 
 ```json
 {
-    "statusCode": 403,
-    "message": "Request failed content safety check."
+  "statusCode": 403,
+  "message": "Request failed content safety check."
 }
 ```
 
@@ -158,11 +157,11 @@ Which is SUPER misleading (I would expect a 500 error of sorts).
 
 ```json
 {
-    "max_tokens":50,
-    "messages":[
-        {"role":"system","content":"You are a helpful assistant"},
-        {"role":"user","content":"Can I get a banana?"}
-    ]
+  "max_tokens": 50,
+  "messages": [
+    { "role": "system", "content": "You are a helpful assistant" },
+    { "role": "user", "content": "Can I get a banana?" }
+  ]
 }
 ```
 
@@ -170,8 +169,8 @@ Which is SUPER misleading (I would expect a 500 error of sorts).
 
 ```json
 {
-    "statusCode": 403,
-    "message": "Request failed content safety check."
+  "statusCode": 403,
+  "message": "Request failed content safety check."
 }
 ```
 
@@ -183,11 +182,11 @@ Now, we'll try to trick LLM to say "banana", by asking the scientific name of a 
 
 ```json
 {
-    "max_tokens":50,
-    "messages":[
-        {"role":"system","content":"You are a helpful assistant"},
-        {"role":"user","content":"What is a Musa acuminata?"}
-    ]
+  "max_tokens": 50,
+  "messages": [
+    { "role": "system", "content": "You are a helpful assistant" },
+    { "role": "user", "content": "What is a Musa acuminata?" }
+  ]
 }
 ```
 
@@ -195,8 +194,8 @@ Now, we'll try to trick LLM to say "banana", by asking the scientific name of a 
 
 ```json
 {
-    "statusCode": 403,
-    "message": "Request failed content safety check."
+  "statusCode": 403,
+  "message": "Request failed content safety check."
 }
 ```
 
