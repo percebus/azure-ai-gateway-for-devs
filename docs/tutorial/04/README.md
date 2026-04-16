@@ -1,5 +1,9 @@
 # Module 4: APIM Load Balancing + App Insights
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-04.drawio.svg)
+
 ## Chapters
 
 1. APIM

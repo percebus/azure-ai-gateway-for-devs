@@ -1,5 +1,9 @@
 # Module 5: MCP Servers in APIM
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-05.drawio.svg)
+
 ## Chapters
 
 1. APIM

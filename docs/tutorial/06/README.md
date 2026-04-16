@@ -1,5 +1,9 @@
 # Module 6: APIM Users, Products, Subscriptions & Policy Fragments
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-06.drawio.svg)
+
 ## Chapters
 
 1. APIM

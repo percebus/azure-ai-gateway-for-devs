@@ -1,5 +1,9 @@
 # Module 1: Foundry & logging infrastructure
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-01.drawio.svg)
+
 ## Chapters
 
 1. [Resource group](./rg.md)

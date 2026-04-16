@@ -1,5 +1,9 @@
 # Module 3: Azure API Management (APIM)
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-03.drawio.svg)
+
 ## Chapters
 
 1. [APIM](./apim/apim.md)

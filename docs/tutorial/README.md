@@ -1,5 +1,9 @@
 # AI Gateway for Developers Tutorial
 
+## Architecture
+
+![Architecture](../../assets/drawio/architecture-final.drawio.svg)
+
 ## Before you begin
 
 This guide follows loosely the recommended abbreviations.

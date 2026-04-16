@@ -1,5 +1,9 @@
 # Module 7: Content-Safety
 
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-final.drawio.svg)
+
 ## Use cases
 
 Imagine the customer coming with the following requirements:
