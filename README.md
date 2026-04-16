@@ -4,7 +4,15 @@ Using Azure Foundry + API Management, you will be building the following.
 
 ![Architecture](./assets/drawio/architecture-final.drawio.png)
 
-## IMPORTANT NOTE
+## IMPORTANT NOTES
+
+### About the repo
+
+> [!WARNING]
+> This is NOT a repository you should `git clone`!
+> This is meant to be followed by readiung it while clicking on a separate window of your Azure portal.
+
+### Intended Audience
 
 > [!TIP]
 > If you can click, you can learn!
