@@ -151,7 +151,7 @@ Inside, you'll see
 - Client identity: System managed identity
 - Resource ID: `https://cognitiveservices.azure.com/`
 
-![cognitiveservices](../../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_Identity.png)
+![cognitiveservices](../../../../assets/img/tutorial/eastus/apim/Backends/foundry-ptu-openai/Authorization_credentials/Managed_identity.png)
 
 ##### Managed Identity
 
