@@ -10,6 +10,7 @@ Using Azure Foundry + API Management, you will be building the following.
 
 > [!WARNING]
 > This is NOT a repository you should `git clone`!
+>
 > This is meant to be followed by readiung it while clicking on a separate window of your Azure portal.
 
 ### Intended Audience

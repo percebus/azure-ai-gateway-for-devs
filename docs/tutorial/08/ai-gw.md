@@ -37,9 +37,9 @@ Now do the same for `eastus2-foundry-payg`.
 1. Answer the following questions:
 
 - What APIs did foundry create?
-    - What inbound policies does it have?
-    - What operations does it have?
-        - Look at the Settings
+  - What inbound policies does it have?
+  - What operations does it have?
+    - Look at the Settings
 
 ### Backends
 
@@ -49,9 +49,9 @@ Now do the same for `eastus2-foundry-payg`.
 1. Answer the following questions:
 
 - What backends did foundry create?
-    - What is the resource ID for **Managed Identity**?
-    - Is it different from the ones created by foundry?
-    - Are there any policies applied to the backends?
+  - What is the resource ID for **Managed Identity**?
+  - Is it different from the ones created by foundry?
+  - Are there any policies applied to the backends?
 
 ### Load balancer
 
@@ -84,7 +84,6 @@ Now go back to foundry
 
 - What do you see?
 - Have you seen that value before?
-
 
 ### Operate
 
