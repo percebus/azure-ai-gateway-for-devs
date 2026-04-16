@@ -20,7 +20,14 @@ This allows to move content around based on feedback
 > [!TIP]
 > Open links w/ Ctrl+Click to open in a new tab.
 
-### Pre-requisites
+### On Markdowns
+
+Make sure you use the GitHub "Outline" feature to navigate the markdown files.
+
+![Outline](../../assets/img/github/markdown/Outline.png)
+assets\img\github\makrdown\Outline.png
+
+## Pre-requisites
 
 1. Azure account
    1. Permissions
