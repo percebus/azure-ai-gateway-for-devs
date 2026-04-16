@@ -60,11 +60,8 @@ Alas, here is the link for you to be aware of [Authorize developer accounts by u
 
 Follow the same steps as before to create a subscription for the Smoke Test Agent for
 
-- one of the products:
-  - `ai-open`
-  - `ai-quota`
-  - `ai-quota-premium`
-- And `mcp`
+- AI: `ai-open`
+- And MCPs `mcp`
 
 Mine ended up looking like this:
 
@@ -72,11 +69,15 @@ Mine ended up looking like this:
 
 ### Test
 
+> [!IMPORTANT]
+> Normally, you wouldn't have the app key's locally, but would be injected during the CI/CD process into the target environment.
+> But because this ain't no "trust me bro" tutorial, we'll make sure that the newly created user works
+
 ```
 # openai via APIM
 AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"
-AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-quota}"
 AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
+AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-open}"
 
 # MCP via APIM
 APIM_MCP__URL="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/mcp-existing-mslearn/api/mcp"
@@ -122,7 +123,7 @@ You should see an error like
 
 #### Disable AI access
 
-We'll do the same, but now for the `ai-quota` product.
+We'll do the same, but now for the `ai-open` product.
 
 1. Count 10 Mississippis
 

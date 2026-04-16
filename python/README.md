@@ -3,6 +3,7 @@
 ## Pre-requisites
 
 1. `uv`
+1. Azure account
 
 ## Setup
 
@@ -14,6 +15,11 @@
 
 1. Copy+paste `.env.example` to `.env`
 2. Fill in the required environment variables.
+
+### login to Azure
+
+1. `$> az login`
+1. Choose the appropiate subscription
 
 ## Run
 
