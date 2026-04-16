@@ -46,10 +46,18 @@ assets\img\github\makrdown\Outline.png
 1. [MCP Servers in APIM](./05/README.md)
 1. [APIM Users, Products, Subscriptions & Policy Fragments](./06/README.md)
 1. [Content-Safety](./07/README.md)
+1. [Food for thought: AI Gateway via Foundry](./08/README.md)
 
 ## Architecture
 
 ![Architecture](../../assets/drawio/architecture-final.drawio.png)
+
+## Cleanup
+
+After you're done, delete the entire resource group that you created for this tutorial to clean up all resources.
+
+> [!WARNING]
+> APIM Can be expensive, so make sure to delete the resource group to avoid unnecessary charges.
 
 ## Resources
 
