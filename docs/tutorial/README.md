@@ -20,6 +20,16 @@ This allows to move content around based on feedback
 > [!TIP]
 > Open links w/ Ctrl+Click to open in a new tab.
 
+### Pre-requisites
+
+1. Azure account
+   1. Permissions
+      1. Create resource group and resources
+      1. Read RBAC Service Principals & Object IDs
+      1. Add RBAC permissions to resources.
+1. VS Code
+1. At some point you'll need `uv`, which will install python for us.
+
 ## Modules
 
 1. [Foundry & logging infrastructure](./01/README.md)

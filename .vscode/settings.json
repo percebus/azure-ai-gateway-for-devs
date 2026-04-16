@@ -1,0 +1,11 @@
+{
+  "acceptSuggestionOnEnter": "off",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  }
+}
