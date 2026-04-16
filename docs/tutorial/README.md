@@ -7,7 +7,7 @@ This guide follows loosely the recommended abbreviations.
 - [Abbreviation recommendations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
 - [The Azure Periodic Table](https://www.azureperiodictable.com/)
 
-With some exceptions for clarity: i.e. `-foundry-` instead of `aif`, which in my brain sounds like "As-if"
+With some exceptions for clarity: i.e. `-foundry-` instead of `-aif-`. Because in my brain, it sounds like "As-if"
 
 ![Clueless](../../assets/img/memes/as-if.png)
 

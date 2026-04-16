@@ -8,7 +8,7 @@ This will be a less hand-held module, and let you explore some "AHA", and "GOTCH
 
 Explore the reverse integration: instead of configuring the linkage between Foundry and APIM using the APIM wizards, let's try it from the other side, and have Foundry create the linkage to APIM for you and inspect what it generates.
 
-## Use cases
+## Goals
 
 - Comparing different wizard-generated APIM configuration
 - Understanding what Foundry auto-provisions (APIs, backends, products, subscriptions)
