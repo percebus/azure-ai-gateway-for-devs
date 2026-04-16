@@ -76,6 +76,7 @@ Now go back to foundry
 
 #### Models
 
+1. Foundry > Build > Models
 1. Select any model
 1. [ Details ] Tab
 1. Unhide "Key" field
@@ -95,6 +96,7 @@ Now go back to foundry
 
 - What happens?
 - What can or cannot do?
+- What happened to the API keys?
 
 ## Next
 
