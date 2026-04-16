@@ -339,4 +339,4 @@ Verify that the managed identity has the "Azure AI User" role assigned.
 
 ## Next
 
-[Back to Module](./README.md)
+[Back to Module](../README.md)

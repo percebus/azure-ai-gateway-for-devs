@@ -61,7 +61,6 @@ Agent: I have access to the following tools:
 These tools help me provide accurate, trustworthy, and comprehensive answers related to Microsoft and Azure technologies.
 ```
 
-
 ## ai-relaxed
 
 1. Then, comment out the `ai-open` key, and use the `ai-relaxed` subscription key to test the relaxed content safety settings.

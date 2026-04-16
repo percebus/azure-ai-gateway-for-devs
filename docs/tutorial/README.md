@@ -47,6 +47,6 @@ With some exceptions for clarity: i.e. `-foundry-` instead if `aif`, which in my
 - [Protected material detection filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-protected-material?tabs=text)
 - [Personally Identifiable Information (PII) filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-personal-information)
 
- ### Related trainings
+### Related trainings
 
 - [Azure Secure Networking for Devs](https://github.com/percebus/azure-secure-networking-for-devs/)

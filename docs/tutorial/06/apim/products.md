@@ -78,10 +78,6 @@ Wait, two keys?
 
 Yes, one for the AI product and one for the MCPs product. Each product has its own subscription key, which allows you to manage access and quotas independently.
 
-## Testing
-
-Now you can use the new subscription keys and test getting throttled by the quota limits.
-
 ## Next
 
 [Back to Module](../README.md)

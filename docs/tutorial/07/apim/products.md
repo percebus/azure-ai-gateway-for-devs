@@ -143,7 +143,6 @@ Add the `<include-fragment fragment-id="llm-content-safety_relaxed" />` to the i
 1. Select both: `{your username}` and `Smoke Test Agent`
 1. Rename policies to `{foo} @ ai-relaxed`
 
-
 ### ai-strict
 
 We'll follow the same steps as `ai-relaxed`, but use the `llm-content-safety_strict` policy fragment instead.

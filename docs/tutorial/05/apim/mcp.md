@@ -58,7 +58,7 @@ YES! Let's add a **Subscription key** requirement.
 
 ## Subscription key Requirement
 
-For this section, we will be following the steps from this other tutorial: [Secure access to MCP servers in API Management](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers)
+For this section, we will be following similar steps from this other tutorial: [Secure access to MCP servers in API Management](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers) (just for reference.)
 
 1. APIM > APIs > MCP servers
 1. Click on `mcp-existing-mslearn`

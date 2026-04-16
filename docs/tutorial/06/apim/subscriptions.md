@@ -33,11 +33,10 @@ It's useful to think of them as kafka consumer group Ids, which sit on Top of w/
 
 1. APIM > Developer portal > Users
 1. [ + Add ]
-
-- First name: `Smoke Test`
-- Last name: `Agent`
-- Email: `smoketest@bananas.com` <<< NOTE!
-- Password: Something like `ChangeMe!123`
+   - First name: `Smoke Test`
+   - Last name: `Agent`
+   - Email: `smoketest@bananas.com` <<< NOTE!
+   - Password: Something like `ChangeMe!123`
 
 ![Smoke Test Agent](../../../../assets/img/tutorial/eastus/apim/Users/+/Smoke_Test_Agent.png)
 
