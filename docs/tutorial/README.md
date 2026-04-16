@@ -9,7 +9,16 @@ This guide follows loosely the recommended abbreviations.
 
 With some exceptions for clarity: i.e. `-foundry-` instead of `aif`, which in my brain sounds like "As-if"
 
-![Clueless](../../assets/img/memes/as-if.png)
+![Clueless](../../assets/img/memes/as-ifpng)
+
+### About links
+
+Because creating linked markdown files is cumbersome, they all have a simple "return to parent" link.
+
+This allows to move content around based on feedback
+
+> [!TIP]
+> Open links w/ Ctrl+Click to open in a new tab.
 
 ## Modules
 

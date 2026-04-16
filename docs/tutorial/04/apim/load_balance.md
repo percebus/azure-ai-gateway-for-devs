@@ -183,7 +183,6 @@ Same as before, we can test directly from the portal.
 }
 ```
 
-
 ### python
 
 And also using our `python` client.
