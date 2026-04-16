@@ -69,6 +69,10 @@ Mine ended up looking like this:
 
 ### Test
 
+> [!IMPORTANT]
+> Normally, you wouldn't have the app key's locally, but would be injected during the CI/CD process into the target environment.
+> But because this ain't no "trust me bro" tutorial, we'll make sure that the newly created user works
+
 ```
 # openai via APIM
 AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"

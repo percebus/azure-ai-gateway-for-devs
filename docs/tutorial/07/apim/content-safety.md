@@ -331,6 +331,23 @@ Add the `<include-fragment fragment-id="llm-content-safety_relaxed" />` to the i
 1. Select both: `{your username}` and `Smoke Test Agent`
 1. Rename policies to `{foo} @ ai-relaxed`
 
+## Python
+
+Go to the `.env` file and dump the newly created subscription keys
+
+it should contain something like this:
+
+```
+# openai via APIM
+AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"
+AZURE_OPENAI__DEPLOYMENT="gpt-4.1-mini-global-standard-latest"
+
+# Subscriptions
+AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-open}" # ai-open
+# AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-relaxed}" # ai-relaxed
+# AZURE_OPENAI__API_KEY="{Smoke Test Agent @ ai-strict}" # ai-strict
+```
+
 ## Next
 
 [Back to Module](../README.md)
