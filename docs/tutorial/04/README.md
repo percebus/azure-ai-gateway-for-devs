@@ -31,7 +31,7 @@ In production, you want to maximize utilization of pre-paid (PTU) capacity while
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-04.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-04.drawio.png)
 
 ## Next
 

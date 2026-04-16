@@ -52,7 +52,7 @@ Well, this time, we'll take it up a notch and manually add configuration.
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-final.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-final.drawio.png)
 
 ## Next
 

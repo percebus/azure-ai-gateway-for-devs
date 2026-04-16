@@ -31,7 +31,7 @@ Different teams and applications need different quotas and access levels. Instea
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-06.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-06.drawio.png)
 
 ## Next
 

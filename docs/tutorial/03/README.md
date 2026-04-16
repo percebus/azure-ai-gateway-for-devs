@@ -32,7 +32,7 @@ Exposing AI services through a gateway enables centralized authentication, polic
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-03.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-03.drawio.png)
 
 ## Next
 

@@ -29,7 +29,7 @@ MCP servers give AI agents access to external tools. By fronting them with APIM,
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-05.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-05.drawio.png)
 
 ## Next
 

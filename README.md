@@ -2,7 +2,7 @@
 
 Azure AI GateWay for devs
 
-![Architecture](./assets/drawio/architecture-final.drawio.svg)
+![Architecture](./assets/drawio/architecture-final.drawio.png)
 
 ## Tutorial
 

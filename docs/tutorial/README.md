@@ -23,7 +23,7 @@ With some exceptions for clarity: i.e. `-foundry-` instead of `aif`, which in my
 
 ## Architecture
 
-![Architecture](../../assets/drawio/architecture-final.drawio.svg)
+![Architecture](../../assets/drawio/architecture-final.drawio.png)
 
 ## Resources
 

@@ -29,7 +29,7 @@ Before adding a gateway layer, confirm the AI backend is functional. This module
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-02.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-02.drawio.png)
 
 ## Next
 

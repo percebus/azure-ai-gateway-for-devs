@@ -29,7 +29,7 @@ Every Azure AI solution starts with a resource group, monitoring and the AI serv
 
 ## Goal
 
-![Architecture](../../../assets/drawio/architecture-01.drawio.svg)
+![Architecture](../../../assets/drawio/architecture-01.drawio.png)
 
 ## Next
 
