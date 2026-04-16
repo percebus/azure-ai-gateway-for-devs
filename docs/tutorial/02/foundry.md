@@ -51,8 +51,8 @@ We'll be creating the following deployment models in the PTU instance.-
 
 ![Deployments](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Deployments.png)
 
-| latest                                                                                                                               | stable                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| latest                                                                                                                                                | stable                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-stable.png) |
 
 #### gpt-4.1-mini-global-standard-latest
@@ -105,8 +105,8 @@ We will follow the same steps as above, but with a different model version upgra
 
 On the deployment model, click on the [ Metrics ] tab (Classic), or [ Monitor ] tab (New Foundry view).
 
-| mode        | img                                                                                                                    |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
+| mode        | img                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
 | New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
 

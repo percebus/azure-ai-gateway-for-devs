@@ -15,12 +15,12 @@ When we're done, it will look something like this
 1. APIM > APIs > Backends
 1. [ + Create new backend ]
 
-  - **Name**: `foundry-ptu-cognitiveservices-endpoint`
-  - **Runtime URL**: `https://ai-gw-{stack-id}-eastus-foundry-ptu.cognitiveservices.azure.com/`
-  - **Authorization credentials**
-    - **Managed Identity**
-      - [x] Enable
-      - **Resource ID**: `https://cognitiveservices.azure.com/`
+- **Name**: `foundry-ptu-cognitiveservices-endpoint`
+- **Runtime URL**: `https://ai-gw-{stack-id}-eastus-foundry-ptu.cognitiveservices.azure.com/`
+- **Authorization credentials**
+  - **Managed Identity**
+    - [x] Enable
+    - **Resource ID**: `https://cognitiveservices.azure.com/`
 
 > [!IMPORTANT]
 > Managed Identity tells APIM that it will authenticate against foundry, via the `https://cognitiveservices.azure.com/` URL
@@ -42,8 +42,8 @@ We will add a Circuit breaker policy, but this time, for any error `400-599`
 
 Follow the same steps as above to create a new backend for
 
-  - **Name**: `foundry-payg-cognitiveservices`
-  - **Runtime URL**: `https://ai-gw-{stack-id}-eastus2-foundry-payg.cognitiveservices.azure.com/`
+- **Name**: `foundry-payg-cognitiveservices`
+- **Runtime URL**: `https://ai-gw-{stack-id}-eastus2-foundry-payg.cognitiveservices.azure.com/`
 
 ### Load balancer
 
@@ -60,7 +60,6 @@ We'll create a couple of Policy fragments
 
 - A strict one
 - And a lenient one
-
 
 ```xml
 <fragment>
@@ -89,11 +88,10 @@ We'll create a couple of Policy fragments
 
 ### llm-content-safety_relaxed
 
-
 1. APIM > APIs > Policy fragments
 
-  - **Name**: `llm-content-safety_relaxed`
-  - **XML policy fragment**:
+- **Name**: `llm-content-safety_relaxed`
+- **XML policy fragment**:
 
 ```xml
 <fragment>
@@ -149,12 +147,12 @@ Follow the steps you did for `ai-open`
 1. APIM > Products
 1. [ + Add ]
 
-  - Display name: `ai-relaxed`
-  - Id: `ai-relaxed`
-  - Description: "AI access with relaxed content safety settings"
-  - [x] Published
-  - [x] Requires subscription
-  - APIs: Select all 3 `foundry-`
+- Display name: `ai-relaxed`
+- Id: `ai-relaxed`
+- Description: "AI access with relaxed content safety settings"
+- [x] Published
+- [x] Requires subscription
+- APIs: Select all 3 `foundry-`
 
 #### Policies
 

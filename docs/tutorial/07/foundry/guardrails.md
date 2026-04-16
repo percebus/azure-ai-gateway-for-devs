@@ -13,13 +13,13 @@ We'll create a block list to disallow the word "apple"
 1. Build > Guardrails > Blocklists
 1. ( Create )
 
-  - Name: bananas
-  - Add terms manually
+- Name: bananas
+- Add terms manually
 
-| term | type |
-|------|------|
-| banana | Exact match |
-| [bB]ananas? | Regex |
+| term        | type        |
+| ----------- | ----------- |
+| banana      | Exact match |
+| [bB]ananas? | Regex       |
 
 ![no bananas](../../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Guardrails/Blocklists/bananas/+/bananas.png)
 
