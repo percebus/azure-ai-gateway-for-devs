@@ -14,7 +14,7 @@ What if we want to apply a policy that applies to EACH AND EVERY API (no excepti
 
 Which will create `append` the following headers to all output
 
-```
+```xml
 <!--
     IMPORTANT:
     - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
