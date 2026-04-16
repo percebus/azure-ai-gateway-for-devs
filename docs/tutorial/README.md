@@ -46,10 +46,6 @@ This allows to move content around based on feedback
 
 ## Resources
 
-### Tech Community
-
-- [Spotlighting (cross-prompt injection attack detection)](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/better-detecting-cross-prompt-injection-attacks-introducing-spotlighting-in-azur/4458404)
-
 ### MS Learn
 
 - [Tutorial: Use Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial)
@@ -65,6 +61,10 @@ This allows to move content around based on feedback
 - [Prompt Shields in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-prompt-shields)
 - [Protected material detection filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-protected-material?tabs=text)
 - [Personally Identifiable Information (PII) filter](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-personal-information)
+
+### Tech Community
+
+- [Spotlighting (cross-prompt injection attack detection)](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/better-detecting-cross-prompt-injection-attacks-introducing-spotlighting-in-azur/4458404)
 
 ### Related trainings
 
