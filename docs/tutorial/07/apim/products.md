@@ -47,6 +47,10 @@ We'll do so by creating a couple of Policy fragments
 > [!NOTE]
 > There is NO mention of Subscription in this policy. So this applies to all requests regardless of subscription.
 
+> [!TIP]
+> This policy could go directly into a Product's inbound policies
+> But we can also showcase another use case for a re-usable policy
+
 ### llm-content-safety_relaxed
 
 1. APIM > APIs > Policy fragments

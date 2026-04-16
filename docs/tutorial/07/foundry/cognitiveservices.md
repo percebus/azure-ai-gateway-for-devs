@@ -24,7 +24,9 @@ However, we're just going to benefit that MS Foundry comes "with batteries inclu
 ![Service endpoints](../../../../assets/img/tutorial/eastus/foundry/portal/Classic/Model_+_endpoints/Service_endpoints.png)
 
 6. Click on "Azure AI Content Safety"
-1. Make note of this URL
+
+> [!IMPORTANT]
+> **Make note of this URL**
 
 `https://ai-gw-{stack-id}-eastus-foundry-ptu.cognitiveservices.azure.com/`
 

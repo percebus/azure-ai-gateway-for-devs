@@ -58,6 +58,10 @@ Follow the same steps as above to create a new backend for
 - Backend weight and priority:
   - [x] Send requests evenly
 
+> [!WARNING]
+> Unlike LLM consumption for PTU vs PayG, we always want to send requests evenly across the Cognitive Services backends.
+> If cognitive services is unavailable, it will block EVERY request associated w/ it.
+
 ## Checklist
 
 So far we've accomplished the following:
@@ -68,8 +72,6 @@ So far we've accomplished the following:
 - [x] Create a Load Balancer for the Cognitive Services backends
 - [ ] Created reusable Policy fragments
 - [ ] Created new Products that use those policies
-
-Now, let's test it!
 
 ## Next
 

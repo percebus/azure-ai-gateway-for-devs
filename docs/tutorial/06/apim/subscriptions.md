@@ -125,10 +125,11 @@ You should see an error like
 We'll do the same, but now for the `ai-open` product.
 
 1. Count 10 Mississippis
+1. Test again (still fails, similar errors)
 
 #### Enable access again
 
-1. Enable both accesses again
+1. Enable **both** accesses again
 1. [ ... ] > "Activate subscription"
 
 - **State comment**: "False alarm"

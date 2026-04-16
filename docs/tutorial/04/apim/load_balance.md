@@ -86,6 +86,9 @@ Update the values to the following:
 
 Same as before, we can test directly from the portal.
 
+> [!TIP]
+> If at any point, you start seeing `429 Too Many Requests` errors, get rid of the inbound token quota limit policy!
+
 ### APIM
 
 ```json
@@ -179,6 +182,7 @@ Same as before, we can test directly from the portal.
   }
 }
 ```
+
 
 ### python
 
