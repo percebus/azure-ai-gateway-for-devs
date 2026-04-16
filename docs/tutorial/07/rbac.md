@@ -94,7 +94,7 @@ And it should reply w/
 }
 ```
 
-Now do the same for `ai-gw-{stack-id}-eastus-foundry-ptu`
+Now do the same for `ai-gw-{stack-id}-eastus2-foundry-payg`
 
 ## Result
 

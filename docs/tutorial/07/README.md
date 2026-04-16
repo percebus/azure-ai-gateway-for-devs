@@ -9,13 +9,13 @@ Imagine the customer coming with the following requirements:
 - We need another one that has Hate:1, Sexual:5, Self-hate:2, Violence:3
 - etc.
 
-Unfortunately, GTP HardWare is finite. Every time we create a deployment model, we're chipping away from the allocated TPM quota for that family in that region.
+Unfortunately, GPT HardWare is finite. Every time we create a deployment model, we're chipping away from the allocated TPM quota for that family in that region.
 
 Furthermore, in high availability scenarios, managing multiple LLM deployments with different content-safety settings can become complex and resource-intensive (even w/ IaC, i.e. `terraform`)
 
 ## Objective
 
-To move content-safety checks from LLM deployments directly into to APIM
+To move content-safety checks from LLM deployments directly into APIM
 
 ## Introduction
 

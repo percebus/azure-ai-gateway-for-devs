@@ -24,7 +24,7 @@ We'll create a block list to disallow the word "apple"
 ![no bananas](../../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Guardrails/Blocklists/bananas/+/bananas.png)
 
 > [!TIP]
-> Yes, Regex usecase renders the exact match useless.
+> Yes, RegEx use case renders the exact match useless.
 > It's only to showcase how to add exact terms, VS regex terms.
 
 ### Guardrails

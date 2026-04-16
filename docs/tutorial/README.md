@@ -1,5 +1,16 @@
 # AI Gateway for Developers Tutorial
 
+## Before you begin
+
+This guide follows loosely the recommended abbreviations.
+
+- [Abbreviation recommendations for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
+- [The Azure Periodic Table](https://www.azureperiodictable.com/)
+
+With some exceptions for clarity: i.e. `-foundry-` instead if `aif`, which in my brain sounds like "As-if"
+
+![Clueless](../../assets/img/memes/as-if.png)
+
 ## Modules
 
 1. [Foundry & logging infrastructure](./01/README.md)

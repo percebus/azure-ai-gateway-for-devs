@@ -76,7 +76,7 @@ To test the `bananas` blocklist we created in previous steps, we'll put it direc
 1. APIM > APIs > APIs
 2. `foundry-openai-lb` > Design > Inbound processing
 
-Add the following policy fragmment to the inbound policies of the `foundry-openai-lb` API.
+Add the following policy fragment to the inbound policies of the `foundry-openai-lb` API.
 
 ```xml
 <llm-content-safety
@@ -201,7 +201,7 @@ Now, we'll try to trick LLM to say "banana", by asking the scientific name of a 
 
 ## Policy fragments
 
-Now that we've did a basic testing, let's create a couple of reusable Policy fragments that we'll use from the Products.
+Now that we've done basic testing, let's create a couple of reusable Policy fragments that we'll use from the Products.
 
 Now, we'll create a couple of Policy fragments
 
