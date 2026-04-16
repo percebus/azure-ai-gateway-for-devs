@@ -1,8 +1,16 @@
-# azure-ai-gateway-for-devs
+# Azure AI GateWay  w/ Azure API Management
 
-Azure AI GateWay for devs
+Using Azure Foundry + API Management, you will be building the following.
 
 ![Architecture](./assets/drawio/architecture-final.drawio.png)
+
+## IMPORTANT NOTE
+
+You don't need to be a SWE, not savvy in python.
+
+This tutorial is meant for EVERYONE, including BPMs, TPMs, managers, etc.
+
+In fact, it will give you a better understanding on the inner workings of Azure AI services and how to integrate them using API Management.
 
 ## Tutorial
 
