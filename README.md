@@ -6,6 +6,9 @@ Using Azure Foundry + API Management, you will be building the following.
 
 ## IMPORTANT NOTE
 
+> [!TIP]
+> If you can click, you can learn!
+
 You don't need to be a SWE, not savvy in python.
 
 This tutorial is meant for EVERYONE, including BPMs, TPMs, managers, etc.
