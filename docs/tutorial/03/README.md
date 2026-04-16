@@ -15,7 +15,7 @@ Exposing AI services through a gateway enables centralized authentication, polic
 - Subscription-based access tracking per consumer
 - Token consumption policies (`llm-token-limit`) at the API level
 
-## Skills learned
+## Skills you will learn
 
 - Creating an APIM instance (Basic v2 tier)
 - Importing Foundry APIs using the APIM wizard

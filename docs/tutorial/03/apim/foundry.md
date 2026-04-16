@@ -337,6 +337,9 @@ Verify that the managed identity has the "Azure AI User" role assigned.
 
 ![Azure AI User](../../../../assets/img/tutorial/eastus/apim/Security/Managed_identities/Azure_role_assignments/02.png)
 
+> [!WARNING]
+> Last month I did this, it added a "Cognitive Services OpenAI User" role instead of "Azure AI User"
+
 ## Next
 
 [Back to Module](../README.md)

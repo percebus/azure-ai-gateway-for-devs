@@ -14,7 +14,7 @@ Before adding a gateway layer, confirm the AI backend is functional. This module
 - Choosing upgrade policies: auto-upgrade vs expire-on-EOL
 - Validating model responses before exposing through a gateway
 
-## Skills learned
+## Skills you will learn
 
 - Deploying `gpt-4.1-mini` with Global Standard deployment type
 - Configuring model version upgrade policies
