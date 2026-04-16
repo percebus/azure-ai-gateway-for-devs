@@ -47,18 +47,21 @@ Now, let's test it!
 ## ai-open
 
 1. Run it against `ai-open`
-1. Make sure everything is still working as expected
+   1. Make sure everything is still working as expected
 
 ## ai-relaxed
 
-1. Then, comment out that key, and use the `ai-relaxed` subscription key to test the relaxed content safety settings.
-1. It should still work as expected
+1. Then, comment out the `ai-open` key, and use the `ai-relaxed` subscription key to test the relaxed content safety settings.
+   1. It should still work as expected
 
 ## ai-strict
 
 For w/e reason, a simple prompt like "What tools are available to you?" triggers the strict content safety policy, resulting in a 403 error.
 
 However, we'll use this to our advantage to prove that the strict content safety policy is indeed being enforced correctly.
+
+1. Then, comment out that key, and use the `ai-strict` subscription key to test the strict content safety settings.
+   1. It should return a `403` error due to the strict content safety policy
 
 > [!CAUTION]
 > agent_framework.exceptions.ServiceResponseException:
