@@ -40,7 +40,7 @@ It should return something like
     ...
 ```
 
-Make not of this guy
+Make note of this guy.-
 
 ```
 "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/a97b65f3-24c7-4388-baec-2e87135dc908",
