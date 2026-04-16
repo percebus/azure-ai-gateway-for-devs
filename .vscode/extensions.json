@@ -14,6 +14,7 @@
     "ms-python.python",
     "ms-python.debugpy",
     "esbenp.prettier-vscode",
-    "teamsdevapp.vscode-ai-foundry"
+    "teamsdevapp.vscode-ai-foundry",
+    "vscode-icons-team.vscode-icons"
   ]
 }
