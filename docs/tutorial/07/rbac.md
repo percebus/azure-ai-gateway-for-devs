@@ -52,8 +52,8 @@ Then, we need to get the Object Id of the APIM service principal. This can be do
 
 ```bash
 $> az apim show \
-  --name ai-gw-{stack-id}-eastus-apim \
   --resource-group ai-gw-{stack-id}-rg \
+  --name ai-gw-{stack-id}-eastus-apim \
   --query identity.principalId \
   --output tsv
 ```
