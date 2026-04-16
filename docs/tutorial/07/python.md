@@ -2,6 +2,8 @@
 
 Back to the `.env` file
 
+We will have (commented out) all 3 subscriptions, and only un-comment the one we want to test at a time.
+
 ```
 # openai via APIM
 AZURE_OPENAI__ENDPOINT="https://ai-gw-{stack-id}-eastus-apim.azure-api.net/foundry-openai-lb/openai/deployments/gpt-4.1-mini-global-standard-latest/chat/completions?api-version=2025-01-01-preview"
