@@ -50,8 +50,12 @@ Make note of this guy.-
 
 Then, we need to get the Object Id of the APIM service principal. This can be done using the Azure CLI:
 
-```
-$> az apim show --name ai-gw-{stack-id}-eastus-apim --resource-group ai-gw-{stack-id}-rg --query identity.principalId --output tsv
+```bash
+$> az apim show \
+  --name ai-gw-{stack-id}-eastus-apim \
+  --resource-group ai-gw-{stack-id}-rg \
+  --query identity.principalId \
+  --output tsv
 ```
 
 Which should return a GUId
@@ -60,7 +64,7 @@ Which should return a GUId
 
 ### Create Role assignment
 
-```
+```bash
 az role assignment create \
   --assignee {APIM Service Principal Object GUId} \
   --role "Cognitive Services User" \
