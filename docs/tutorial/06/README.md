@@ -14,7 +14,7 @@ Different teams and applications need different quotas and access levels. Instea
 - Suspending and reactivating access without touching the API itself
 - Rotating subscription keys after an accidental leak
 
-## Skills learned
+## Skills you will learn
 
 - Creating APIM Products and assigning APIs to them
 - Managing Users and Subscriptions (create, suspend, activate, rotate keys)

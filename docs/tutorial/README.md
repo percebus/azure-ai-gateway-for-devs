@@ -46,7 +46,7 @@ assets\img\github\makrdown\Outline.png
 1. [MCP Servers in APIM](./05/README.md)
 1. [APIM Users, Products, Subscriptions & Policy Fragments](./06/README.md)
 1. [Content-Safety](./07/README.md)
-1. [Food for thought: AI Gateway via Foundry](./08/README.md)
+1. [Food for thought: AI Gateway from Foundry](./08/README.md)
 
 ## Architecture
 

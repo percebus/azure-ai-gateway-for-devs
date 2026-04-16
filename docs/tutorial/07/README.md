@@ -27,7 +27,7 @@ Remember when we added MS Foundry using the APIM wizard and it did everything fo
 
 Well, this time, we'll take it up a notch and manually add configuration.
 
-## Skills learned
+## Skills you will learn
 
 - Assigning "Cognitive Services User" RBAC roles via `az` CLI
 - Creating Foundry Guardrail policies and custom Blocklists (exact match + regex)

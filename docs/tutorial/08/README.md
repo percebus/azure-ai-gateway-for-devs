@@ -1,4 +1,8 @@
-# Module 8: Food for thought — AI Gateway via Foundry
+# Module 8: AI Gateway from Foundry
+
+This will be a less hand-held module, and let you explore some "AHA", and "GOTCHAS", or with some luck, even a...
+
+![Great Scott!](../../../assets/img/memes/doc.png)
 
 ## Summary
 
@@ -16,7 +20,7 @@ This is a bonus exercise and it's not part of the main tutorial.
 
 We'll create another linkage between APIM and Foundry. But this time, we'll do it from Foundry instead, and compare against what we've built by hand.
 
-## Skills learned
+## Skills you will learn
 
 - Adding an AI Gateway from the Foundry portal
 - Inspecting auto-generated APIM APIs, backends, and products

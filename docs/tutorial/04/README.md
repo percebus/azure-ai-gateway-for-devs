@@ -15,7 +15,7 @@ In production, you want to maximize utilization of pre-paid (PTU) capacity while
 - End-to-end request tracing through App Insights
 - KQL queries to correlate frontend requests with backend routing decisions
 
-## Skills learned
+## Skills you will learn
 
 - Creating APIM load balancer pools with priority-based backends
 - Configuring circuit breaker rules (failure count, trip duration, Retry-After)

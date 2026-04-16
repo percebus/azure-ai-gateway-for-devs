@@ -14,7 +14,7 @@ MCP servers give AI agents access to external tools. By fronting them with APIM,
 - Integrating APIM-hosted MCP servers with VS Code Copilot chat
 - Governing AI agent tool usage with the same policies as LLM calls
 
-## Skills learned
+## Skills you will learn
 
 - Exposing an existing MCP server in APIM
 - Requiring subscription keys for MCP endpoints

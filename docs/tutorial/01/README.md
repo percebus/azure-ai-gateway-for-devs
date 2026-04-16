@@ -14,7 +14,7 @@ Every Azure AI solution starts with a resource group, monitoring and the AI serv
 - Standardized resource naming conventions for team collaboration
 - Region-aware infrastructure for high availability
 
-## Skills learned
+## Skills you will learn
 
 - Creating and tagging Azure Resource Groups
 - Deploying Log Analytics Workspace (LAW) and Application Insights (appi)
