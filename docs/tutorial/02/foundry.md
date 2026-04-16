@@ -49,11 +49,11 @@ For this exercise, we will be using the "New Foundry" view.
 
 We'll be creating the following deployment models in the PTU instance.-
 
-![Deployments](../../../assets/img/tutorial/eastus/foundry/Models/Deployments.png)
+![Deployments](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Deployments.png)
 
 | latest                                                                                                                               | stable                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/Models/+/gpt-4.1-mini-global-standard-stable.png) |
+| ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-stable.png) |
 
 #### gpt-4.1-mini-global-standard-latest
 
@@ -99,7 +99,7 @@ We will follow the same steps as above, but with a different model version upgra
 1. Go to Model > Playground
 1. Type "Hi" and click "Send" (paper plane)
 
-![Playground](../../../assets/img/tutorial/eastus/foundry/Models/Playground.png)
+![Playground](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Playground.png)
 
 #### Monitor / metrics
 
@@ -107,8 +107,8 @@ On the deployment model, click on the [ Metrics ] tab (Classic), or [ Monitor ] 
 
 | mode        | img                                                                                                                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
-| New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
+| Classic     | ![Metrics](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/Classic.png) |
+| New Foundry | ![Monitor](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Monitor/gpt-4.1-mini-global-standard-latest/New.png)     |
 
 ### PayG
 

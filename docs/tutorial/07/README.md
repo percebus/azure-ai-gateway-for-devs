@@ -1,5 +1,9 @@
 # Module 7: Content-Safety
 
+## Objective
+
+To move content-safety checks from LLM deployments to APIM
+
 ## Introduction
 
 Remember when we added MS Foundry using the APIM wizard and it did everything for us?
