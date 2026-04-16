@@ -213,7 +213,7 @@ We'll test w/ the following endpoint:
 
 Replies w/ something like this
 
-**HTTP Respose**
+**HTTP Response**
 
 **Message**
 

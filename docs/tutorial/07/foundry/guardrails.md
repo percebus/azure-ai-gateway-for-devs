@@ -6,7 +6,7 @@ Because we want to move content-safety checks from LLM deployments to APIM, we'l
 
 ### Blocklists
 
-We'll create a block list to disallow the word "apple"
+We'll create a block list to disallow the word "banana"
 
 1. Foundry > Overview > [ Go to Foundry portal ]
 1. Make sure you're in the "New Foundry" experience
