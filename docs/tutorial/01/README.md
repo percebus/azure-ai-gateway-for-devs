@@ -1,9 +1,5 @@
 # Module 1: Foundry & logging infrastructure
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-01.drawio.svg)
-
 ## Summary
 
 Create the foundational Azure resources: a resource group, monitoring infrastructure, and AI Foundry instances across two regions.
@@ -30,6 +26,10 @@ Every Azure AI solution starts with a resource group, monitoring and the AI serv
 1. [Resource group](./rg.md)
 1. [Logging infrastructure](./logs.md)
 1. [Foundry](./foundry.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-01.drawio.svg)
 
 ## Next
 

@@ -1,9 +1,5 @@
 # Module 5: MCP Servers in APIM
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-05.drawio.svg)
-
 ## Summary
 
 Expose an existing MCP server (MS Learn) through APIM, secure it with a subscription key, and integrate it with VS Code Copilot.
@@ -30,6 +26,10 @@ MCP servers give AI agents access to external tools. By fronting them with APIM,
 1. APIM
    1. [MCP via APIM](./apim/mcp.md)
    1. [Python Smoke testing](./python.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-05.drawio.svg)
 
 ## Next
 

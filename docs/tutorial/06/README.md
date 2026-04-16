@@ -1,9 +1,5 @@
 # Module 6: APIM Users, Products, Subscriptions & Policy Fragments
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-06.drawio.svg)
-
 ## Summary
 
 Organize APIs into products with distinct policies, create users and subscriptions, and build reusable policy fragments for rate limiting.
@@ -32,6 +28,10 @@ Different teams and applications need different quotas and access levels. Instea
    1. [Products](./apim/products.md)
    1. [Subscriptions](./apim/subscriptions.md)
    1. [Policy Fragments](./apim/policy_fragment.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-06.drawio.svg)
 
 ## Next
 

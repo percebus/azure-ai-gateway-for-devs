@@ -1,9 +1,5 @@
 # Module 4: APIM Load Balancing + App Insights
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-04.drawio.svg)
-
 ## Summary
 
 Add a load balancer across PTU and PAYG backends with circuit breaker failover, and use App Insights to observe the routing behavior.
@@ -32,6 +28,10 @@ In production, you want to maximize utilization of pre-paid (PTU) capacity while
 1. APIM
    1. [Load balancing](./apim/load_balance.md)
    1. [App Insights](./appi.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-04.drawio.svg)
 
 ## Next
 

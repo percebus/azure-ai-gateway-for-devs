@@ -1,9 +1,5 @@
 # Module 7: Content-Safety
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-final.drawio.svg)
-
 ## Summary
 
 Decouple content-safety enforcement from LLM model deployments and move it into APIM policies. Create distinct safety profiles (relaxed vs strict) as Products, so multiple teams can share the same model deployments with different content moderation rules.
@@ -53,6 +49,10 @@ Well, this time, we'll take it up a notch and manually add configuration.
    1. [Test blocklist in API](./apim/blocklists.md)
    1. [Products w/ different Content-Safety profiles](./apim/products.md)
 1. [Test with python](./python.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-final.drawio.svg)
 
 ## Next
 

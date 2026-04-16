@@ -1,9 +1,5 @@
 # Module 2: LLM Deployment models & smoke testing
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-02.drawio.svg)
-
 ## Summary
 
 Deploy LLM models in Foundry and validate they respond correctly using the included Python client.
@@ -30,6 +26,10 @@ Before adding a gateway layer, confirm the AI backend is functional. This module
 
 1. [Foundry](./foundry.md)
 1. [Python tester](./python.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-02.drawio.svg)
 
 ## Next
 

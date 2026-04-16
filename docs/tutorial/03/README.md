@@ -1,9 +1,5 @@
 # Module 3: Azure API Management (APIM)
 
-## Goal
-
-![Architecture](../../../assets/drawio/architecture-03.drawio.svg)
-
 ## Summary
 
 Put APIM in front of Foundry so all AI traffic flows through a managed gateway instead of hitting Foundry directly.
@@ -33,6 +29,10 @@ Exposing AI services through a gateway enables centralized authentication, polic
 1. [APIM](./apim/apim.md)
 1. [Foundry via APIM](./apim/foundry.md)
 1. [Python Smoke tester](./python.md)
+
+## Goal
+
+![Architecture](../../../assets/drawio/architecture-03.drawio.svg)
 
 ## Next
 
