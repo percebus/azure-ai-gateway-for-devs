@@ -4,6 +4,10 @@
 
 ![Architecture](../../../assets/drawio/architecture-final.drawio.svg)
 
+## Summary
+
+Decouple content-safety enforcement from LLM model deployments and move it into APIM policies. Create distinct safety profiles (relaxed vs strict) as Products, so multiple teams can share the same model deployments with different content moderation rules.
+
 ## Use cases
 
 Imagine the customer coming with the following requirements:
@@ -26,6 +30,17 @@ To move content-safety checks from LLM deployments directly into APIM
 Remember when we added MS Foundry using the APIM wizard and it did everything for us?
 
 Well, this time, we'll take it up a notch and manually add configuration.
+
+## Skills learned
+
+- Assigning "Cognitive Services User" RBAC roles via `az` CLI
+- Creating Foundry Guardrail policies and custom Blocklists (exact match + regex)
+- Locating Cognitive Services endpoints in the Foundry portal
+- Creating APIM backends for Cognitive Services with Managed Identity
+- Configuring `llm-content-safety` policy with `EightSeverityLevels` thresholds
+- Building content-safety Policy Fragments (relaxed vs strict profiles)
+- Attaching content-safety fragments to Products for per-subscription enforcement
+- Testing blocklists: positive tests, negative input tests, and output-tricking tests
 
 ## Chapters
 

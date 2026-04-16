@@ -175,7 +175,7 @@ But you get
 
 What this is saying is that certain `llm-token-limit` attributes (like `remaining-quota-tokens-header-name`) are HTTP-specific and unavailable for websocket APIs and global/product-scoped policy fragments. Since policy fragments must be compatible across all protocols including websockets, HTTP-header-specific attributes can't be used within them.
 
-Alas, a Product is our only option
+Which means that it won't work on a Product either.
 
 ## Next
 
