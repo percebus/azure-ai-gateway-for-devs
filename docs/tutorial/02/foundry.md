@@ -49,11 +49,11 @@ For this exercise, we will be using the "New Foundry" view.
 
 We'll be creating the following deployment models in the PTU instance.-
 
-![Deployments](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/Deployments.png)
+![Deployments](../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Models/Deployments.png)
 
 | latest                                                                                                                                                | stable                                                                                                                                                |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-stable.png) |
+| ![gpt-4.1-mini-global-standard-latest](../../../assets/img/tutorial/eastus/foundry/portal/New/Build/Models/+/gpt-4.1-mini-global-standard-latest.png) | ![gpt-4.1-mini-global-standard-stable](../../../assets/img/tutorial/eastus/foundry/portal/new/Build/Models/+/gpt-4.1-mini-global-standard-stable.png) |
 
 #### gpt-4.1-mini-global-standard-latest
 
