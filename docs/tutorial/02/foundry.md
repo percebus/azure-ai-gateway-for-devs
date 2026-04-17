@@ -15,7 +15,7 @@ You will see this toggle:
 | Mode    | img                                                                                 |
 | ------- | ----------------------------------------------------------------------------------- |
 | Classic | ![Classic](../../../assets/img/tutorial/eastus/foundry/portal/Classic/Overview.png) |
-| New     | ![New](../../../assets/img/tutorial/eastus/foundry/portal/nNew/Home.png)             |
+| New     | ![New](../../../assets/img/tutorial/eastus/foundry/portal/New/Home.png)             |
 
 Make sure you familiarize with both views.
 
